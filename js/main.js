@@ -1,0 +1,1 @@
+console.log("Vozes do Direito carregado com sucesso.");
