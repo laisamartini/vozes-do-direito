@@ -13,7 +13,7 @@
         margin-right: auto;
     }
 
-    .hero-botoes {
+    .hero-acoes {
         justify-content: center;
     }
 }
@@ -34,5 +34,9 @@
 
     .navbar-brand {
         font-size: 1.3rem;
+    }
+
+    .hero-mini-cards {
+        grid-template-columns: 1fr;
     }
 }

@@ -1,3 +1,5 @@
+/* Global */
+
 :root {
     --vinho-principal: #5B1321;
     --vinho-secundario: #7B2435;
@@ -24,6 +26,8 @@ a {
     text-decoration: none;
 }
 
+/* Navbar */
+
 .navbar {
     background: var(--vinho-principal);
     padding: 16px 0;
@@ -31,28 +35,40 @@ a {
 }
 
 .navbar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
     font-family: 'Playfair Display', serif;
     font-size: 1.6rem;
     font-weight: 700;
     color: var(--branco);
 }
 
-.navbar-brand i {
+.marca-icone {
+    width: 38px;
+    height: 38px;
+    background: rgba(200, 162, 76, 0.18);
     color: var(--dourado);
-    margin-right: 8px;
+    border: 1px solid rgba(200, 162, 76, 0.45);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nav-link {
     color: rgba(255, 255, 255, 0.78);
     font-weight: 500;
     margin-left: 10px;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .nav-link:hover,
 .nav-link.active {
     color: var(--dourado);
 }
+
+/* Buttons */
 
 .btn-warning {
     background-color: var(--dourado);
@@ -82,12 +98,39 @@ a {
     color: var(--branco);
 }
 
+.btn-branco-vinho {
+    background-color: var(--branco);
+    border: 2px solid var(--branco);
+    color: var(--vinho-principal);
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 12px 28px;
+}
+
+.btn-branco-vinho:hover {
+    background-color: var(--creme);
+    border-color: var(--creme);
+    color: var(--vinho-principal);
+}
+
+/* Sections */
+
 .secao {
     padding: 90px 0;
 }
 
 .secao-clara {
     background: var(--branco);
+}
+
+.tag-secao {
+    display: inline-block;
+    color: var(--dourado);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.82rem;
+    margin-bottom: 12px;
 }
 
 .titulo-secao {
@@ -106,7 +149,11 @@ a {
 .cabecalho-secao p {
     color: #5d646b;
     font-size: 1.08rem;
+    max-width: 720px;
+    margin: 0 auto;
 }
+
+/* Internal pages */
 
 .pagina-interna {
     min-height: 80vh;
@@ -125,6 +172,8 @@ a {
     max-width: 760px;
     color: #5d646b;
 }
+
+/* Cards */
 
 .card {
     border: none;
@@ -156,6 +205,8 @@ a {
     font-size: 2.2rem;
     color: var(--dourado);
 }
+
+/* Footer */
 
 .rodape {
     background: var(--vinho-principal);

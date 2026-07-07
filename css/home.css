@@ -1,13 +1,17 @@
+/* Hero */
+
 .hero {
     min-height: 100vh;
     padding: 160px 0 100px;
-    background: linear-gradient(135deg, var(--vinho-principal), var(--vinho-secundario));
+    background:
+        radial-gradient(circle at top right, rgba(200, 162, 76, 0.16), transparent 35%),
+        linear-gradient(135deg, var(--vinho-principal), var(--vinho-secundario));
     color: var(--branco);
     display: flex;
     align-items: center;
 }
 
-.badge-projeto {
+.tag-hero {
     display: inline-block;
     background: rgba(200, 162, 76, 0.18);
     border: 1px solid var(--dourado);
@@ -34,36 +38,84 @@
     margin-bottom: 35px;
 }
 
-.hero-botoes {
+.hero-acoes {
     display: flex;
     gap: 15px;
     flex-wrap: wrap;
 }
 
+/* Hero card */
+
 .hero-card {
     background: rgba(255, 255, 255, 0.08);
     border: 1px solid rgba(200, 162, 76, 0.3);
     border-radius: 30px;
-    padding: 60px 35px;
+    padding: 55px 35px;
+    text-align: center;
     backdrop-filter: blur(10px);
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
 }
 
-.hero-card i {
-    font-size: 4rem;
+.simbolo-principal {
+    width: 155px;
+    height: 155px;
+    border: 2px solid var(--dourado);
+    border-radius: 50%;
+    margin: 0 auto 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+.simbolo-principal i {
+    font-size: 2.8rem;
     color: var(--dourado);
-    margin: 10px;
+}
+
+.simbolo-principal span {
+    width: 28px;
+    height: 2px;
+    background: var(--dourado);
+    display: inline-block;
 }
 
 .hero-card h2 {
     font-family: 'Playfair Display', serif;
-    margin-top: 25px;
+    font-size: 2rem;
+    margin-bottom: 15px;
 }
 
 .hero-card p {
-    margin: 15px auto 0;
     font-size: 1rem;
+    margin: 0 auto 30px;
 }
+
+.hero-mini-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+}
+
+.hero-mini-cards div {
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 14px;
+    padding: 14px 8px;
+}
+
+.hero-mini-cards strong {
+    display: block;
+    color: var(--dourado);
+    font-size: 1.2rem;
+}
+
+.hero-mini-cards span {
+    color: rgba(255, 255, 255, 0.78);
+    font-size: 0.82rem;
+}
+
+/* Info cards */
 
 .card-info {
     background: var(--branco);
@@ -71,7 +123,7 @@
     border-radius: 20px;
     height: 100%;
     box-shadow: 0 10px 30px rgba(91, 19, 33, 0.08);
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .card-info:hover {
@@ -96,12 +148,28 @@
     margin-bottom: 0;
 }
 
+.card-info-destaque {
+    background: linear-gradient(135deg, var(--vinho-principal), var(--vinho-secundario));
+    color: var(--branco);
+}
+
+.card-info-destaque h3,
+.card-info-destaque i {
+    color: var(--dourado);
+}
+
+.card-info-destaque p {
+    color: rgba(255, 255, 255, 0.8);
+}
+
+/* Content cards */
+
 .card-conteudo-home {
     background: var(--creme);
     padding: 35px;
     border-radius: 24px;
     height: 100%;
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .card-conteudo-home:hover {
@@ -124,13 +192,44 @@
     color: #5d646b;
 }
 
+/* Area cards */
+
+.area-card {
+    background: var(--branco);
+    border-radius: 18px;
+    padding: 28px 16px;
+    text-align: center;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(91, 19, 33, 0.08);
+    transition: 0.3s ease;
+}
+
+.area-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(91, 19, 33, 0.14);
+}
+
+.area-card i {
+    display: block;
+    color: var(--dourado);
+    font-size: 2rem;
+    margin-bottom: 12px;
+}
+
+.area-card span {
+    color: var(--vinho-principal);
+    font-weight: 700;
+}
+
+/* Terms */
+
 .termo-card {
     background: var(--branco);
     padding: 32px;
     border-radius: 22px;
     height: 100%;
     box-shadow: 0 10px 30px rgba(91, 19, 33, 0.08);
-    transition: 0.3s;
+    transition: 0.3s ease;
 }
 
 .termo-card:hover {
@@ -156,4 +255,25 @@
 
 .termo-card p {
     color: #5d646b;
+}
+
+/* CTA */
+
+.chamada-final {
+    background: linear-gradient(135deg, var(--vinho-principal), var(--vinho-secundario));
+    color: var(--branco);
+    padding: 80px 0;
+}
+
+.chamada-final h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.6rem;
+    margin-bottom: 20px;
+}
+
+.chamada-final p {
+    max-width: 680px;
+    margin: 0 auto 30px;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1.1rem;
 }
