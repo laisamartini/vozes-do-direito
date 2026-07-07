@@ -8,6 +8,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/style.css">
@@ -17,75 +18,339 @@
 
 <body>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
 
             <a class="navbar-brand" href="../index.html">
-                <i class="bi bi-chat-square-text-fill"></i>
-                Vozes do Direito
+                <span class="marca-icone">
+                    <i class="bi bi-chat-square-text-fill"></i>
+                </span>
+                <span>Vozes do Direito</span>
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
+                aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="menu-principal">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="conteudos.html">Conteúdos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="dicionario.html">Dicionário</a></li>
-                    <li class="nav-item"><a class="nav-link" href="cotidiano.html">Direito no Cotidiano</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="quem-somos.html">Quem Somos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="conteudos.html">Conteúdos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="dicionario.html">Dicionário</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="cotidiano.html">Direito no Cotidiano</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="quem-somos.html">Quem Somos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+
                 </ul>
             </div>
 
         </div>
     </nav>
 
-    <main class="pagina-interna">
-        <section class="container py-5">
+    <!-- Hero interno -->
+    <header class="quem-hero">
+        <div class="container">
 
-            <h1 class="titulo-pagina">Quem Somos</h1>
+            <span class="tag-secao">Quem Somos</span>
 
-            <p class="subtitulo-pagina">
-                O Vozes do Direito é um projeto de extensão voltado à democratização do conhecimento jurídico.
+            <h1>A equipe por trás do Vozes do Direito</h1>
+
+            <p>
+                Um projeto de extensão criado para aproximar o conhecimento jurídico da sociedade
+                por meio de uma comunicação clara, acessível, educativa e socialmente comprometida.
             </p>
 
-            <div class="row g-4 mt-4">
+        </div>
+    </header>
 
-                <div class="col-lg-8">
-                    <div class="card p-4">
-                        <h2>Sobre o projeto</h2>
-                        <p>
-                            O projeto busca aproximar o Direito da sociedade por meio da divulgação de conteúdos jurídicos em linguagem simples, clara e acessível.
+    <main>
+
+        <!-- Sobre o projeto -->
+        <section class="secao">
+            <div class="container">
+
+                <div class="row align-items-center g-5">
+
+                    <div class="col-lg-6">
+                        <span class="tag-secao">Sobre a equipe</span>
+
+                        <h2 class="titulo-secao">
+                            Unindo Direito, comunicação e cidadania.
+                        </h2>
+
+                        <p class="texto-secao">
+                            O Vozes do Direito é desenvolvido por acadêmicas comprometidas com a
+                            democratização do acesso à informação jurídica. A proposta parte da
+                            percepção de que muitos conteúdos do Direito ainda são apresentados em
+                            linguagem excessivamente técnica, o que pode dificultar a compreensão da
+                            população sobre seus próprios direitos e deveres.
                         </p>
-                        <p>
-                            A proposta surge da necessidade de reduzir as barreiras causadas pela linguagem técnico-jurídica, promovendo educação jurídica, cidadania e acesso à informação.
+
+                        <p class="texto-secao">
+                            Por isso, o projeto busca traduzir temas jurídicos para uma linguagem mais
+                            simples, sem perder a responsabilidade na transmissão das informações.
+                            A equipe atua na pesquisa de temas relevantes, produção de conteúdos
+                            educativos, organização das publicações digitais e desenvolvimento do site.
+                        </p>
+
+                        <p class="texto-secao">
+                            A iniciativa também valoriza a extensão universitária como forma de aproximar
+                            a universidade da comunidade, utilizando a tecnologia e a comunicação digital
+                            como ferramentas de cidadania, educação e acesso à informação.
                         </p>
                     </div>
+
+                    <div class="col-lg-6">
+                        <div class="caixa-missao">
+                            <i class="bi bi-chat-square-heart"></i>
+
+                            <h3>Nossa missão</h3>
+
+                            <p>
+                                Tornar o Direito mais compreensível e próximo da realidade das pessoas,
+                                usando a comunicação como ferramenta de cidadania, educação jurídica
+                                e acesso à informação.
+                            </p>
+                        </div>
+                    </div>
+
                 </div>
 
-                <div class="col-lg-4">
-                    <div class="card p-4">
-                        <h2>Equipe</h2>
-                        <p>Acadêmicas do curso de Direito da UEMS.</p>
+            </div>
+        </section>
+
+        <!-- Orientação -->
+        <section class="secao secao-clara">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <span class="tag-secao">Orientação</span>
+                    <h2 class="titulo-secao">Professora orientadora</h2>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+
+                        <article class="card-orientadora">
+
+                            <div class="orientadora-icone">
+                                <i class="bi bi-mortarboard"></i>
+                            </div>
+
+                            <div>
+                                <h3>Prof.ª Dr.ª Eliana Lamberti</h3>
+
+                                <span>Professora orientadora — UEMS</span>
+
+                                <p>
+                                    Graduada em Ciências Econômicas pela Universidade Federal de Mato Grosso
+                                    do Sul, mestre em Desenvolvimento Regional e doutora em Economia do
+                                    Desenvolvimento pela Universidade Federal do Rio Grande do Sul.
+                                </p>
+
+                                <p>
+                                    É docente titular da Universidade Estadual de Mato Grosso do Sul e atua
+                                    em áreas relacionadas ao desenvolvimento regional, tecnologias sociais,
+                                    economia da inovação, Direito e Economia, economia comportamental e
+                                    metodologias científicas.
+                                </p>
+
+                                <p>
+                                    No projeto Vozes do Direito, contribui com a orientação acadêmica e
+                                    metodológica da equipe, auxiliando no planejamento das ações extensionistas,
+                                    na organização das atividades e na construção de uma proposta educativa,
+                                    acessível e socialmente relevante.
+                                </p>
+                            </div>
+
+                        </article>
+
                     </div>
                 </div>
 
             </div>
-
         </section>
+
+        <!-- Participantes -->
+        <section class="secao">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <span class="tag-secao">Equipe</span>
+                    <h2 class="titulo-secao">Participantes do projeto</h2>
+                    <p class="texto-central">
+                        Conheça as acadêmicas responsáveis pela construção dos conteúdos,
+                        organização das ações, pesquisa jurídica, comunicação digital e desenvolvimento
+                        do site do projeto.
+                    </p>
+                </div>
+
+                <div class="row g-4 justify-content-center">
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card-equipe">
+                            <div class="avatar-equipe">
+                                <i class="bi bi-person"></i>
+                            </div>
+
+                            <h3>Laisa Maria Martini</h3>
+
+                            <span>Acadêmica de Direito — UEMS</span>
+
+                            <strong>Desenvolvimento do site</strong>
+
+                            <p>
+                                Responsável pela estruturação, organização visual e desenvolvimento
+                                das páginas do site.
+                            </p>
+
+                            <p>
+                                Interessa-se por tecnologia, comunicação jurídica, Direito Internacional e democratização
+                                do acesso à informação.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card-equipe">
+                            <div class="avatar-equipe">
+                                <i class="bi bi-person"></i>
+                            </div>
+
+                            <h3>Heloisa Cristina de Almeida</h3>
+
+                            <span>Acadêmica de Direito — UEMS</span>
+
+                            <strong>Redes sociais</strong>
+
+                            <p>
+                                Responsável pela administração do Instagram do projeto, produção de
+                                conteúdos e divulgação de informações jurídicas de forma acessível.
+                            </p>
+
+                            <p>
+                                Interessa-se por comunicação, tecnologia e difusão de informações jurídicas.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card-equipe">
+                            <div class="avatar-equipe">
+                                <i class="bi bi-person"></i>
+                            </div>
+
+                            <h3>Ana Júlia Jaquet Duarte</h3>
+
+                            <span>Acadêmica de Direito — UEMS</span>
+
+                            <strong>Redes sociais</strong>
+
+                            <p>
+                                Responsável pela administração do Instagram do projeto, produção de
+                                conteúdos e divulgação de informações jurídicas de forma acessível.
+                            </p>
+
+                            <p>
+                                Interessa-se por investigação e análise jurídica de casos de natureza
+                                criminal, especialmente relacionados à persecução penal,
+                                interdisciplinaridade e tecnologia.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card-equipe">
+                            <div class="avatar-equipe">
+                                <i class="bi bi-person"></i>
+                            </div>
+
+                            <h3>Maria Clara Matos Recalcatti</h3>
+
+                            <span>Acadêmica de Direito — UEMS</span>
+
+                            <strong>Pesquisa jurídica e produção de conteúdo</strong>
+
+                            <p>
+                                Responsável pela pesquisa jurídica e produção de conteúdos envolvidos
+                                na elaboração do projeto.
+                            </p>
+
+                            <p>
+                                Interessa-se por literatura, conexão entre diferentes áreas do conhecimento
+                                e comunicação no meio jurídico.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="card-equipe">
+                            <div class="avatar-equipe">
+                                <i class="bi bi-person"></i>
+                            </div>
+
+                            <h3>Júlia Gabriele Schiremberck Oliveira</h3>
+
+                            <span>Acadêmica de Direito — UEMS</span>
+
+                            <strong>Pesquisa jurídica e revisão de conteúdo</strong>
+
+                            <p>
+                                Responsável pela pesquisa dos temas desenvolvidos no site e no
+                                Instagram do projeto, além da elaboração e organização dos conteúdos publicados.
+                            </p>
+
+                            <p>
+                                Interessa-se por pesquisa, ciências forenses, raciocínio investigativo
+                                e pelas conexões entre ciência e Direito.
+                            </p>
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
+    <!-- Footer -->
     <footer class="rodape">
         <div class="container">
-            <p><strong>Vozes do Direito</strong> — Projeto de Extensão · UEMS</p>
-            <p>Conteúdo educativo. Não substitui orientação jurídica profissional.</p>
+
+            <p>
+                <strong>Vozes do Direito</strong> — Projeto de Extensão · UEMS
+            </p>
+
+            <p>
+                Conteúdo educativo. Não substitui orientação jurídica profissional.
+            </p>
+
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
