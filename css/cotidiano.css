@@ -1,0 +1,175 @@
+/* Hero */
+
+.cotidiano-hero {
+    padding: 150px 0 80px;
+    background:
+        radial-gradient(circle at top right, rgba(200, 162, 76, 0.14), transparent 35%),
+        linear-gradient(135deg, var(--vinho-principal), var(--vinho-secundario));
+    color: var(--branco);
+    text-align: center;
+}
+
+.cotidiano-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.6rem;
+    margin-bottom: 20px;
+}
+
+.cotidiano-hero p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+/* Destaque */
+
+.caixa-cotidiano {
+    background: var(--branco);
+    border-radius: 28px;
+    padding: 42px;
+    box-shadow: 0 12px 35px rgba(91, 19, 33, 0.1);
+    border: 1px solid rgba(91, 19, 33, 0.06);
+}
+
+.caixa-cotidiano i {
+    font-size: 3rem;
+    color: var(--dourado);
+    margin-bottom: 22px;
+}
+
+.caixa-cotidiano h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--vinho-principal);
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.caixa-cotidiano p {
+    color: #5d646b;
+    line-height: 1.8;
+    margin-bottom: 0;
+}
+
+/* Situações */
+
+.texto-central {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #5d646b;
+    line-height: 1.8;
+}
+
+.situacao-card {
+    background: var(--branco);
+    border-radius: 24px;
+    padding: 34px;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(91, 19, 33, 0.08);
+    border: 1px solid rgba(91, 19, 33, 0.06);
+    transition: 0.3s ease;
+}
+
+.situacao-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(91, 19, 33, 0.14);
+}
+
+.situacao-icone {
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
+    background: rgba(200, 162, 76, 0.14);
+    color: var(--dourado);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin-bottom: 22px;
+}
+
+.situacao-card span {
+    display: inline-block;
+    color: var(--vinho-principal);
+    background: var(--cinza-claro);
+    border-radius: 30px;
+    padding: 6px 14px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.situacao-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--vinho-principal);
+    font-size: 1.55rem;
+    margin-bottom: 12px;
+}
+
+.situacao-card p {
+    color: #5d646b;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* Passos */
+
+.passos-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.passo-item {
+    background: var(--branco);
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    gap: 18px;
+    align-items: flex-start;
+    box-shadow: 0 10px 30px rgba(91, 19, 33, 0.08);
+    border: 1px solid rgba(91, 19, 33, 0.06);
+}
+
+.passo-item span {
+    width: 46px;
+    height: 46px;
+    border-radius: 50%;
+    background: var(--vinho-principal);
+    color: var(--dourado);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    flex-shrink: 0;
+}
+
+.passo-item h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--vinho-principal);
+    font-size: 1.35rem;
+    margin-bottom: 6px;
+}
+
+.passo-item p {
+    color: #5d646b;
+    margin-bottom: 0;
+    line-height: 1.7;
+}
+
+/* Responsivo */
+
+@media (max-width: 576px) {
+    .cotidiano-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .caixa-cotidiano {
+        padding: 30px;
+    }
+
+    .passo-item {
+        flex-direction: column;
+    }
+}

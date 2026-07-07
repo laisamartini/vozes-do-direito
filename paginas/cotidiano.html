@@ -8,6 +8,7 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/style.css">
@@ -17,86 +18,311 @@
 
 <body>
 
+    <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
         <div class="container">
 
             <a class="navbar-brand" href="../index.html">
-                <i class="bi bi-chat-square-text-fill"></i>
-                Vozes do Direito
+                <span class="marca-icone">
+                    <i class="bi bi-chat-square-text-fill"></i>
+                </span>
+                <span>Vozes do Direito</span>
             </a>
 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
+                aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="collapse navbar-collapse" id="menu-principal">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
-                    <li class="nav-item"><a class="nav-link" href="conteudos.html">Conteúdos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="dicionario.html">Dicionário</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="cotidiano.html">Direito no Cotidiano</a></li>
-                    <li class="nav-item"><a class="nav-link" href="quem-somos.html">Quem Somos</a></li>
-                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Início</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="conteudos.html">Conteúdos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="dicionario.html">Dicionário</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="cotidiano.html">Direito no Cotidiano</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="quem-somos.html">Quem Somos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contato.html">Contato</a>
+                    </li>
+
                 </ul>
             </div>
 
         </div>
     </nav>
 
-    <main class="pagina-interna">
-        <section class="container py-5">
+    <!-- Hero interno -->
+    <header class="cotidiano-hero">
+        <div class="container">
 
-            <h1 class="titulo-pagina">Direito no Cotidiano</h1>
+            <span class="tag-secao">Direito no Cotidiano</span>
 
-            <p class="subtitulo-pagina">
-                Situações comuns do dia a dia explicadas sob a perspectiva jurídica.
+            <h1>O Direito está mais perto do que parece</h1>
+
+            <p>
+                Situações comuns do dia a dia também envolvem direitos, deveres e responsabilidades.
+                Aqui, elas são explicadas de forma simples e acessível.
             </p>
 
-            <div class="row g-4 mt-4">
+        </div>
+    </header>
 
-                <div class="col-md-6 col-lg-4">
-                    <div class="card card-conteudo h-100">
-                        <div class="card-body p-4">
-                            <i class="bi bi-cart3 icone-card"></i>
-                            <h2>Direito do Consumidor</h2>
-                            <p>Compras, trocas, produtos com defeito, cobranças e relações de consumo.</p>
+    <main>
+
+        <!-- Introdução -->
+        <section class="secao">
+            <div class="container">
+
+                <div class="row align-items-center g-5">
+
+                    <div class="col-lg-6">
+                        <span class="tag-secao">Na prática</span>
+
+                        <h2 class="titulo-secao">
+                            Entender o Direito ajuda a lidar melhor com situações reais.
+                        </h2>
+
+                        <p class="texto-secao">
+                            Muitas dúvidas jurídicas surgem em momentos comuns: uma compra com defeito,
+                            uma cobrança indevida, um contrato assinado sem atenção ou uma situação de
+                            exposição nas redes sociais.
+                        </p>
+
+                        <p class="texto-secao">
+                            Esta página reúne exemplos práticos para mostrar como o Direito aparece na
+                            rotina das pessoas e por que conhecer informações básicas pode ajudar na
+                            tomada de decisões.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <div class="caixa-cotidiano">
+                            <i class="bi bi-lightbulb"></i>
+
+                            <h3>Você sabia?</h3>
+
+                            <p>
+                                Nem todo problema precisa começar diretamente na Justiça. Em muitos casos,
+                                informação, documentação e orientação adequada já ajudam a buscar uma solução.
+                            </p>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-6 col-lg-4">
-                    <div class="card card-conteudo h-100">
-                        <div class="card-body p-4">
-                            <i class="bi bi-briefcase icone-card"></i>
-                            <h2>Direitos Trabalhistas</h2>
-                            <p>Carteira assinada, férias, FGTS, horas extras e direitos básicos do trabalhador.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="col-md-6 col-lg-4">
-                    <div class="card card-conteudo h-100">
-                        <div class="card-body p-4">
-                            <i class="bi bi-house-door icone-card"></i>
-                            <h2>Moradia e Locação</h2>
-                            <p>Aluguel, direitos do inquilino, deveres do proprietário e contratos de locação.</p>
-                        </div>
-                    </div>
                 </div>
 
             </div>
-
         </section>
+
+        <!-- Situações -->
+        <section class="secao secao-clara">
+            <div class="container">
+
+                <div class="text-center mb-5">
+                    <span class="tag-secao">Exemplos</span>
+                    <h2 class="titulo-secao">Situações do dia a dia</h2>
+                    <p class="texto-central">
+                        Veja alguns exemplos de situações comuns que podem envolver questões jurídicas.
+                    </p>
+                </div>
+
+                <div class="row g-4">
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="situacao-card">
+                            <div class="situacao-icone">
+                                <i class="bi bi-bag-check"></i>
+                            </div>
+
+                            <span>Consumidor</span>
+
+                            <h3>Produto com defeito</h3>
+
+                            <p>
+                                Quando um produto apresenta defeito, o consumidor pode ter direito a reparo,
+                                troca, abatimento no preço ou devolução do valor, conforme o caso.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="situacao-card">
+                            <div class="situacao-icone">
+                                <i class="bi bi-credit-card"></i>
+                            </div>
+
+                            <span>Cobrança</span>
+
+                            <h3>Cobrança indevida</h3>
+
+                            <p>
+                                Valores cobrados sem justificativa podem ser contestados. É importante guardar
+                                comprovantes, protocolos e registros da tentativa de solução.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="situacao-card">
+                            <div class="situacao-icone">
+                                <i class="bi bi-file-earmark-text"></i>
+                            </div>
+
+                            <span>Contratos</span>
+
+                            <h3>Assinar sem ler</h3>
+
+                            <p>
+                                Antes de assinar um contrato, é essencial observar prazos, multas, valores,
+                                responsabilidades e condições de cancelamento.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="situacao-card">
+                            <div class="situacao-icone">
+                                <i class="bi bi-phone"></i>
+                            </div>
+
+                            <span>Ambiente digital</span>
+
+                            <h3>Uso indevido de imagem</h3>
+
+                            <p>
+                                A divulgação de imagem sem autorização pode gerar consequências jurídicas,
+                                principalmente quando causa exposição, prejuízo ou constrangimento.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="situacao-card">
+                            <div class="situacao-icone">
+                                <i class="bi bi-house-door"></i>
+                            </div>
+
+                            <span>Moradia</span>
+
+                            <h3>Problemas em aluguel</h3>
+
+                            <p>
+                                Questões como reajuste, caução, manutenção do imóvel e rescisão do contrato
+                                devem observar o que foi pactuado e a legislação aplicável.
+                            </p>
+                        </article>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4">
+                        <article class="situacao-card">
+                            <div class="situacao-icone">
+                                <i class="bi bi-briefcase"></i>
+                            </div>
+
+                            <span>Trabalho</span>
+
+                            <h3>Direitos trabalhistas</h3>
+
+                            <p>
+                                Jornada, salário, férias, descanso e registro são temas que fazem parte das
+                                relações de trabalho e devem ser compreendidos pelo trabalhador.
+                            </p>
+                        </article>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Passo a passo -->
+        <section class="secao">
+            <div class="container">
+
+                <div class="row align-items-center g-5">
+
+                    <div class="col-lg-5">
+                        <span class="tag-secao">Orientação básica</span>
+
+                        <h2 class="titulo-secao">
+                            O que fazer diante de um problema?
+                        </h2>
+
+                        <p class="texto-secao">
+                            Algumas atitudes simples podem ajudar a organizar melhor a situação antes de
+                            buscar uma solução.
+                        </p>
+                    </div>
+
+                    <div class="col-lg-7">
+                        <div class="passos-lista">
+
+                            <div class="passo-item">
+                                <span>01</span>
+                                <div>
+                                    <h3>Guarde provas</h3>
+                                    <p>Salve contratos, notas fiscais, mensagens, protocolos e comprovantes.</p>
+                                </div>
+                            </div>
+
+                            <div class="passo-item">
+                                <span>02</span>
+                                <div>
+                                    <h3>Busque informação</h3>
+                                    <p>Entenda qual direito pode estar envolvido antes de tomar uma decisão.</p>
+                                </div>
+                            </div>
+
+                            <div class="passo-item">
+                                <span>03</span>
+                                <div>
+                                    <h3>Procure canais adequados</h3>
+                                    <p>Dependendo do caso, é possível buscar órgãos de defesa, atendimento gratuito ou orientação profissional.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
     </main>
 
+    <!-- Footer -->
     <footer class="rodape">
         <div class="container">
-            <p><strong>Vozes do Direito</strong> — Projeto de Extensão · UEMS</p>
-            <p>Conteúdo educativo. Não substitui orientação jurídica profissional.</p>
+
+            <p>
+                <strong>Vozes do Direito</strong> — Projeto de Extensão · UEMS
+            </p>
+
+            <p>
+                Conteúdo educativo. Não substitui orientação jurídica profissional.
+            </p>
+
         </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+
 </body>
 
 </html>
