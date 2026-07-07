@@ -1,0 +1,155 @@
+/* Hero */
+
+.contato-hero {
+    padding: 150px 0 80px;
+    background:
+        radial-gradient(circle at top right, rgba(200, 162, 76, 0.14), transparent 35%),
+        linear-gradient(135deg, var(--vinho-principal), var(--vinho-secundario));
+    color: var(--branco);
+    text-align: center;
+}
+
+.contato-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.6rem;
+    margin-bottom: 20px;
+}
+
+.contato-hero p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+/* Cards de contato */
+
+.contato-card {
+    background: var(--branco);
+    border-radius: 24px;
+    padding: 34px;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(91, 19, 33, 0.08);
+    border: 1px solid rgba(91, 19, 33, 0.06);
+    transition: 0.3s ease;
+}
+
+.contato-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(91, 19, 33, 0.14);
+}
+
+.contato-icone {
+    width: 58px;
+    height: 58px;
+    border-radius: 18px;
+    background: rgba(200, 162, 76, 0.14);
+    color: var(--dourado);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.9rem;
+    margin-bottom: 22px;
+}
+
+.contato-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--vinho-principal);
+    font-size: 1.55rem;
+    margin-bottom: 12px;
+}
+
+.contato-card p {
+    color: #5d646b;
+    line-height: 1.7;
+    margin-bottom: 18px;
+}
+
+.contato-link {
+    color: var(--vinho-principal);
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.contato-link:hover {
+    color: var(--dourado);
+}
+
+/* Formulário */
+
+.formulario-card {
+    background: var(--branco);
+    border-radius: 28px;
+    padding: 42px;
+    box-shadow: 0 12px 35px rgba(91, 19, 33, 0.1);
+    border: 1px solid rgba(91, 19, 33, 0.06);
+}
+
+.texto-central {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #5d646b;
+    line-height: 1.8;
+}
+
+.form-label {
+    color: var(--vinho-principal);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border: 2px solid var(--cinza-claro);
+    border-radius: 14px;
+    padding: 14px 16px;
+    color: var(--grafite);
+    transition: 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: var(--dourado);
+    box-shadow: 0 0 0 4px rgba(200, 162, 76, 0.14);
+}
+
+.aviso-formulario {
+    background: rgba(200, 162, 76, 0.12);
+    border-radius: 18px;
+    padding: 18px;
+    display: flex;
+    gap: 14px;
+    align-items: flex-start;
+    margin: 8px 0 12px;
+}
+
+.aviso-formulario i {
+    color: var(--dourado);
+    font-size: 1.4rem;
+    flex-shrink: 0;
+}
+
+.aviso-formulario p {
+    margin-bottom: 0;
+    color: #5d646b;
+    line-height: 1.6;
+}
+
+/* Responsivo */
+
+@media (max-width: 576px) {
+    .contato-hero {
+        padding: 135px 0 65px;
+    }
+
+    .contato-hero h1 {
+        font-size: 2.4rem;
+    }
+
+    .formulario-card {
+        padding: 28px;
+    }
+
+    .aviso-formulario {
+        flex-direction: column;
+    }
+}
