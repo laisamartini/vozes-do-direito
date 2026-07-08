@@ -1,3 +1,5 @@
+/* Tablets */
+
 @media (max-width: 991px) {
     .hero {
         text-align: center;
@@ -16,27 +18,110 @@
     .hero-acoes {
         justify-content: center;
     }
-}
 
-@media (max-width: 576px) {
-    .hero h1 {
-        font-size: 2.4rem;
+    .navbar-collapse {
+        background: var(--vinho-principal);
+        margin-top: 14px;
+        padding: 18px;
+        border-radius: 18px;
+    }
+
+    .nav-link {
+        padding: 10px 0;
     }
 
     .titulo-secao,
     .titulo-pagina {
-        font-size: 2.2rem;
+        font-size: 2.7rem;
+    }
+}
+
+/* Celulares */
+
+@media (max-width: 576px) {
+    body {
+        font-size: 0.95rem;
+    }
+
+    .hero {
+        padding: 130px 0 70px;
+    }
+
+    .hero h1 {
+        font-size: 2.35rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .hero-acoes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-acoes .btn {
+        width: 100%;
+        max-width: 310px;
     }
 
     .secao {
         padding: 65px 0;
     }
 
+    .titulo-secao,
+    .titulo-pagina {
+        font-size: 2.15rem;
+    }
+
     .navbar-brand {
-        font-size: 1.3rem;
+        font-size: 1.2rem;
+    }
+
+    .marca-icone {
+        width: 38px;
+        height: 38px;
+        font-size: 1rem;
     }
 
     .hero-mini-cards {
         grid-template-columns: 1fr;
+    }
+
+    .card-info,
+    .card-conteudo-home,
+    .area-card,
+    .termo-card,
+    .quadro-card,
+    .termo-card-dicionario,
+    .situacao-card,
+    .card-equipe,
+    .contato-card {
+        padding: 28px;
+    }
+
+    .rodape {
+        text-align: center;
+    }
+}
+
+/* Celulares muito pequenos */
+
+@media (max-width: 380px) {
+    .hero h1,
+    .quem-hero h1,
+    .conteudos-hero h1,
+    .dicionario-hero h1,
+    .cotidiano-hero h1,
+    .contato-hero h1 {
+        font-size: 2rem;
+    }
+
+    .titulo-secao {
+        font-size: 1.9rem;
+    }
+
+    .btn {
+        font-size: 0.95rem;
     }
 }

@@ -218,3 +218,61 @@ a {
 .rodape p {
     margin: 5px 0;
 }
+
+/* Acessibilidade e acabamento */
+
+html {
+    scroll-behavior: smooth;
+}
+
+a,
+button,
+input,
+textarea {
+    outline-color: var(--dourado);
+}
+
+::selection {
+    background: var(--dourado);
+    color: var(--vinho-principal);
+}
+
+.nav-link.active {
+    color: var(--dourado) !important;
+    font-weight: 700;
+}
+
+.nav-link:focus,
+.btn:focus,
+.form-control:focus {
+    outline: 3px solid rgba(200, 162, 76, 0.35);
+    outline-offset: 3px;
+}
+
+.btn {
+    transition: 0.3s ease;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    overflow-wrap: break-word;
+}
+
+.card-info,
+.card-conteudo-home,
+.area-card,
+.termo-card,
+.quadro-card,
+.termo-card-dicionario,
+.situacao-card,
+.card-equipe,
+.contato-card,
+.formulario-card,
+.card-orientadora,
+.caixa-missao {
+    overflow: hidden;
+}
