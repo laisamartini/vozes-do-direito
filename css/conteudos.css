@@ -145,3 +145,16 @@
     color: #5d646b;
     margin-bottom: 0;
 }
+
+/* Links dos quadros */
+
+.quadro-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.quadro-link:hover {
+    color: inherit;
+}

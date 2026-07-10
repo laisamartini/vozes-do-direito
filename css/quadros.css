@@ -1,0 +1,113 @@
+/* Hero dos quadros */
+
+.quadro-hero {
+    padding: 150px 0 80px;
+    background:
+        radial-gradient(circle at top right, rgba(200, 162, 76, 0.14), transparent 35%),
+        linear-gradient(135deg, var(--vinho-principal), var(--vinho-secundario));
+    color: var(--branco);
+    text-align: center;
+}
+
+.quadro-hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.8rem;
+    margin-bottom: 20px;
+}
+
+.quadro-hero p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+/* Destaque */
+
+.quadro-destaque-info {
+    background: var(--branco);
+    border-radius: 28px;
+    padding: 42px;
+    box-shadow: 0 12px 35px rgba(91, 19, 33, 0.1);
+    border: 1px solid rgba(91, 19, 33, 0.06);
+}
+
+.quadro-destaque-info i {
+    display: block;
+    font-size: 3rem;
+    color: var(--dourado);
+    margin-bottom: 22px;
+}
+
+.quadro-destaque-info h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--vinho-principal);
+    font-size: 2rem;
+    margin-bottom: 16px;
+}
+
+.quadro-destaque-info p {
+    color: #5d646b;
+    line-height: 1.8;
+    margin-bottom: 0;
+    text-align: justify;
+}
+
+/* Exemplos */
+
+.exemplo-card {
+    background: var(--branco);
+    border-radius: 24px;
+    padding: 32px;
+    height: 100%;
+    box-shadow: 0 10px 30px rgba(91, 19, 33, 0.08);
+    border: 1px solid rgba(91, 19, 33, 0.06);
+    transition: 0.3s ease;
+}
+
+.exemplo-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 40px rgba(91, 19, 33, 0.14);
+}
+
+.exemplo-card span {
+    display: inline-block;
+    color: var(--vinho-principal);
+    background: var(--cinza-claro);
+    border-radius: 30px;
+    padding: 6px 14px;
+    font-size: 0.78rem;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.exemplo-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: var(--vinho-principal);
+    font-size: 1.45rem;
+    margin-bottom: 12px;
+}
+
+.exemplo-card p {
+    color: #5d646b;
+    line-height: 1.7;
+    margin-bottom: 0;
+}
+
+/* Responsivo */
+
+@media (max-width: 576px) {
+    .quadro-hero {
+        padding: 135px 0 65px;
+    }
+
+    .quadro-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .quadro-destaque-info,
+    .exemplo-card {
+        padding: 28px;
+    }
+}
