@@ -153,3 +153,12 @@
         flex-direction: column;
     }
 }
+
+.contato-link {
+    display: inline-block;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+    word-break: break-word;
+    line-height: 1.5;
+    font-size: 0.97rem;
+}
