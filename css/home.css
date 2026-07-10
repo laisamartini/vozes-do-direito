@@ -277,3 +277,23 @@
     color: rgba(255, 255, 255, 0.82);
     font-size: 1.1rem;
 }
+
+/* Links dos cards da Home */
+
+.card-link-home {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    height: 100%;
+}
+
+.card-link-home:hover {
+    color: inherit;
+}
+
+.texto-central-home {
+    max-width: 760px;
+    margin: 0 auto;
+    color: #5d646b;
+    line-height: 1.8;
+}

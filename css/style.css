@@ -113,6 +113,22 @@ a {
     color: var(--vinho-principal);
 }
 
+.btn-vinho {
+    background-color: var(--vinho-principal);
+    border: 2px solid var(--vinho-principal);
+    color: var(--branco);
+    font-weight: 700;
+    border-radius: 12px;
+    padding: 12px 28px;
+    text-decoration: none;
+}
+
+.btn-vinho:hover {
+    background-color: var(--vinho-secundario);
+    border-color: var(--vinho-secundario);
+    color: var(--branco);
+}
+
 /* Sections */
 
 .secao {
