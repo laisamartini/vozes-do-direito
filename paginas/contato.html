@@ -176,34 +176,33 @@
                                 </h2>
 
                                 <p class="texto-central">
-    Para enviar sugestões, utilize preferencialmente o Instagram ou o e-mail do projeto.
-    O formulário abaixo representa uma estrutura visual que poderá ser conectada futuramente.
+                                    Preencha os campos abaixo. Ao enviar, seu aplicativo de e-mail será aberto com a mensagem pronta.
                                 </p>
                                 
                             </div>
 
-                            <form>
+                            <form id="formContato">
 
                                 <div class="row g-3">
 
                                     <div class="col-md-6">
                                         <label for="nome" class="form-label">Nome</label>
-                                        <input type="text" class="form-control" id="nome" placeholder="Seu nome">
+                                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Seu nome" required>
                                     </div>
 
                                     <div class="col-md-6">
                                         <label for="email" class="form-label">E-mail</label>
-                                        <input type="email" class="form-control" id="email" placeholder="seuemail@exemplo.com">
+                                        <input type="email" class="form-control" id="email" name="email" placeholder="seuemail@exemplo.com" required>
                                     </div>
 
                                     <div class="col-12">
                                         <label for="assunto" class="form-label">Assunto</label>
-                                        <input type="text" class="form-control" id="assunto" placeholder="Ex: Direito do Consumidor">
+                                        <input type="text" class="form-control" id="assunto" name="assunto" placeholder="Ex: Direito do Consumidor" required>
                                     </div>
 
                                     <div class="col-12">
                                         <label for="mensagem" class="form-label">Mensagem</label>
-                                        <textarea class="form-control" id="mensagem" rows="5" placeholder="Escreva sua sugestão ou dúvida geral"></textarea>
+                                        <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua sugestão ou dúvida geral" required></textarea>
                                     </div>
 
                                     <div class="col-12">
@@ -217,10 +216,9 @@
                                     </div>
 
                                     <div class="col-12 text-center">
-                                        <a href="mailto:vozesdodireitoprojeto@gmail.com?subject=Sugest%C3%A3o%20de%20tema%20-%20Vozes%20do%20Direito&body=Ol%C3%A1%2C%20equipe%20do%20Vozes%20do%20Direito.%0A%0AGostaria%20de%20sugerir%20um%20tema%20para%20o%20projeto%3A%0A%0ATema%3A%20%0A%0AMensagem%3A%20%0A%0A"
-                                            class="btn btn-vinho">
+                                        <button type="submit" class="btn btn-vinho">
                                             Enviar sugestão por e-mail
-                                        </a>
+                                        </button>
                                         
                                     </div>
 
@@ -254,6 +252,8 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/contato.js"></script>
 
 </body>
 

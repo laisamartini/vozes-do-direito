@@ -1,129 +1,155 @@
 const campoPesquisa = document.getElementById('campoPesquisa');
-const termos = document.querySelectorAll('.termo-item');
-const cardsTermos = document.querySelectorAll('.termo-card-dicionario');
+const listaTermos = document.getElementById('listaTermos');
 const resultadoMensagem = document.getElementById('resultadoMensagem');
 const listaSugestoes = document.getElementById('listaSugestoes');
 
 const modalTermo = new bootstrap.Modal(document.getElementById('modalTermo'));
-
 const modalTermoArea = document.getElementById('modalTermoArea');
 const modalTermoTitulo = document.getElementById('modalTermoTitulo');
 const modalTermoResumo = document.getElementById('modalTermoResumo');
 const modalTermoDetalhes = document.getElementById('modalTermoDetalhes');
 
-function pegarDadosDoCard(card) {
-    const titulo = card.querySelector('h3')?.innerText || '';
-    const area = card.querySelector('span')?.innerText || '';
-    const resumo = card.querySelector('p')?.innerText || '';
-
-    return {
-        termo: card.dataset.termo || titulo,
-        area: card.dataset.area || area,
-        resumo: card.dataset.resumo || resumo,
-        detalhes: card.dataset.detalhes || 'Mais informações sobre este termo serão adicionadas em breve.'
-    };
+function normalizarTexto(texto) {
+    return texto
+        .normalize('NFD')
+        .replace(/[\u0300-\u036f]/g, '')
+        .toLowerCase()
+        .trim();
 }
 
-function termoCombinaComBusca(nomeTermo, textoDigitado) {
-    const palavras = nomeTermo.toLowerCase().split(' ');
+function termoCombinaComBusca(dados, textoDigitado) {
+    const conteudo = normalizarTexto(`${dados.termo} ${dados.area} ${dados.resumo}`);
+    const palavrasBuscadas = normalizarTexto(textoDigitado).split(/\s+/).filter(Boolean);
 
-    return palavras.some(function (palavra) {
-        return palavra.startsWith(textoDigitado);
+    return palavrasBuscadas.every(function (palavra) {
+        return conteudo.includes(palavra);
     });
 }
 
-function abrirModal(card) {
-    const dados = pegarDadosDoCard(card);
+function criarCard(dados) {
+    const coluna = document.createElement('div');
+    coluna.className = 'col-md-6 col-lg-4 termo-item';
 
-    modalTermoArea.innerText = dados.area;
-    modalTermoTitulo.innerText = dados.termo;
-    modalTermoResumo.innerText = dados.resumo;
-    modalTermoDetalhes.innerText = dados.detalhes;
+    const card = document.createElement('article');
+    card.className = 'termo-card-dicionario';
+    card.tabIndex = 0;
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-label', `Abrir explicação de ${dados.termo}`);
 
-    modalTermo.show();
-}
+    const area = document.createElement('span');
+    area.textContent = dados.area;
 
-function filtrarTermos() {
-    const textoDigitado = campoPesquisa.value.toLowerCase().trim();
-    let quantidadeVisivel = 0;
+    const titulo = document.createElement('h3');
+    titulo.textContent = dados.termo;
 
-    termos.forEach(function (termo) {
-        const card = termo.querySelector('.termo-card-dicionario');
-        const dados = pegarDadosDoCard(card);
-        const nomeTermo = dados.termo.toLowerCase();
+    const resumo = document.createElement('p');
+    resumo.textContent = dados.resumo;
 
-        if (textoDigitado === '' || termoCombinaComBusca(nomeTermo, textoDigitado)) {
-            termo.style.display = 'block';
-            quantidadeVisivel++;
-        } else {
-            termo.style.display = 'none';
+    card.append(area, titulo, resumo);
+    coluna.appendChild(card);
+
+    card.addEventListener('click', function () {
+        abrirModal(dados);
+    });
+
+    card.addEventListener('keydown', function (event) {
+        if (event.key === 'Enter' || event.key === ' ') {
+            event.preventDefault();
+            abrirModal(dados);
         }
     });
 
-    if (quantidadeVisivel === 0) {
-        resultadoMensagem.style.display = 'block';
-        resultadoMensagem.innerText = 'Nenhum termo encontrado. Tente pesquisar outro termo.';
-    } else {
-        resultadoMensagem.style.display = 'none';
+    return coluna;
+}
+
+function renderizarTermos(termos) {
+    listaTermos.replaceChildren(...termos.map(criarCard));
+}
+
+function abrirModal(dados) {
+    modalTermoArea.textContent = dados.area;
+    modalTermoTitulo.textContent = dados.termo;
+    modalTermoResumo.textContent = dados.resumo;
+    modalTermoDetalhes.textContent = dados.detalhes;
+    modalTermo.show();
+}
+
+function obterTermosFiltrados() {
+    const textoDigitado = campoPesquisa.value;
+
+    if (normalizarTexto(textoDigitado) === '') {
+        return termosJuridicos;
     }
+
+    return termosJuridicos.filter(function (dados) {
+        return termoCombinaComBusca(dados, textoDigitado);
+    });
+}
+
+function filtrarTermos() {
+    const termosFiltrados = obterTermosFiltrados();
+    renderizarTermos(termosFiltrados);
+
+    resultadoMensagem.style.display = termosFiltrados.length === 0 ? 'block' : 'none';
+    resultadoMensagem.textContent = termosFiltrados.length === 0
+        ? 'Nenhum termo encontrado. Tente pesquisar outro termo.'
+        : '';
 }
 
 function mostrarSugestoes() {
-    const textoDigitado = campoPesquisa.value.toLowerCase().trim();
+    const textoDigitado = campoPesquisa.value;
+    listaSugestoes.replaceChildren();
 
-    listaSugestoes.innerHTML = '';
-
-    if (textoDigitado === '') {
+    if (normalizarTexto(textoDigitado) === '') {
         listaSugestoes.style.display = 'none';
         return;
     }
 
-    let sugestoesEncontradas = 0;
+    const sugestoes = termosJuridicos
+        .filter(function (dados) {
+            return termoCombinaComBusca(dados, textoDigitado);
+        })
+        .slice(0, 5);
 
-    cardsTermos.forEach(function (card) {
-        const dados = pegarDadosDoCard(card);
-        const nomeTermo = dados.termo.toLowerCase();
+    sugestoes.forEach(function (dados) {
+        const sugestao = document.createElement('button');
+        sugestao.type = 'button';
+        sugestao.className = 'sugestao-item';
+        sugestao.textContent = dados.termo;
 
-        if (termoCombinaComBusca(nomeTermo, textoDigitado)) {
-            const sugestao = document.createElement('div');
+        sugestao.addEventListener('click', function () {
+            campoPesquisa.value = dados.termo;
+            listaSugestoes.style.display = 'none';
+            filtrarTermos();
+            abrirModal(dados);
+        });
 
-            sugestao.classList.add('sugestao-item');
-            sugestao.innerText = dados.termo;
-
-            sugestao.addEventListener('click', function () {
-                campoPesquisa.value = dados.termo;
-                listaSugestoes.style.display = 'none';
-                filtrarTermos();
-                abrirModal(card);
-            });
-
-            listaSugestoes.appendChild(sugestao);
-            sugestoesEncontradas++;
-        }
+        listaSugestoes.appendChild(sugestao);
     });
 
-    if (sugestoesEncontradas > 0) {
-        listaSugestoes.style.display = 'block';
-    } else {
-        listaSugestoes.style.display = 'none';
-    }
+    listaSugestoes.style.display = sugestoes.length > 0 ? 'block' : 'none';
 }
 
-campoPesquisa.addEventListener('input', function () {
+function debounce(funcao, espera) {
+    let temporizador;
+
+    return function () {
+        clearTimeout(temporizador);
+        temporizador = setTimeout(funcao, espera);
+    };
+}
+
+const atualizarBusca = debounce(function () {
     filtrarTermos();
     mostrarSugestoes();
-});
+}, 200);
 
-cardsTermos.forEach(function (card) {
-    card.style.cursor = 'pointer';
-
-    card.addEventListener('click', function () {
-        abrirModal(card);
-    });
-});
+campoPesquisa.addEventListener('input', atualizarBusca);
 
 document.addEventListener('click', function (event) {
     if (!event.target.closest('.campo-busca')) {
         listaSugestoes.style.display = 'none';
     }
 });
+
+renderizarTermos(termosJuridicos);

@@ -27,13 +27,14 @@ O site reúne páginas informativas, um dicionário jurídico interativo e conte
 - **Dicionário Jurídico:** termos jurídicos com busca interativa e explicações acessíveis.
 - **Direito no Cotidiano:** exemplos práticos de situações comuns que envolvem o Direito.
 - **Quem Somos:** apresentação da equipe e da professora orientadora.
-- **Contato:** canais de comunicação e formulário visual para sugestões.
+- **Contato:** canais de comunicação e formulário que prepara a sugestão no aplicativo de e-mail.
 
 ## Funcionalidades
 
 - Layout responsivo para computador, tablet e celular.
 - Navbar com navegação entre páginas.
-- Dicionário jurídico com filtro de busca.
+- Dicionário jurídico gerado dinamicamente a partir de uma fonte de dados centralizada.
+- Filtro de busca que reconhece palavras com ou sem acentos.
 - Sugestões automáticas durante a digitação.
 - Modal com explicação ampliada dos termos jurídicos.
 - Cards informativos organizados por tema.
@@ -68,13 +69,25 @@ vozes-do-direito/
 │   └── responsive.css
 │
 ├── js/
-│   └── dicionario.js
-│
-├── imagens/
+│   ├── contato.js
+│   ├── dados.js
+│   ├── dicionario.js
+│   └── main.js
 │
 └── paginas/
+    ├── contato.html
     ├── conteudos.html
-    ├── dicionario.html
     ├── cotidiano.html
+    ├── dicionario.html
+    ├── fala-direito.html
+    ├── jurinews.html
+    ├── mito-ou-verdade.html
+    ├── normal-nao-e-legal.html
+    ├── pergunta-da-semana.html
     ├── quem-somos.html
-    └── contato.html
+    └── vale-a-pena-ver-direito.html
+```
+
+## Licença
+
+Este projeto é distribuído sob a licença MIT. Consulte o arquivo [LICENSE](LICENSE).
