@@ -165,11 +165,21 @@
 }
 
 .sugestao-item {
+    display: block;
+    width: 100%;
+    border: 0;
+    background: transparent;
+    text-align: left;
     padding: 14px 20px;
     cursor: pointer;
     color: var(--grafite);
     font-weight: 600;
     transition: 0.2s ease;
+}
+
+.sugestao-item:focus-visible {
+    outline: 3px solid rgba(200, 162, 76, 0.45);
+    outline-offset: -3px;
 }
 
 .sugestao-item:hover {
