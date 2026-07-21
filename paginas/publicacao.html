@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conteúdo educativo do projeto Vozes do Direito.">
+    <title>Publicação | Vozes do Direito</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/publicacao.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">
+                <span class="marca-icone"><i class="bi bi-chat-square-text-fill"></i></span>
+                <span>Vozes do Direito</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu-principal"
+                aria-controls="menu-principal" aria-expanded="false" aria-label="Abrir menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../index.html">Início</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="conteudos.html">Conteúdos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dicionario.html">Dicionário</a></li>
+                    <li class="nav-item"><a class="nav-link" href="cotidiano.html">Direito no Cotidiano</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quem-somos.html">Quem Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contato.html">Contato</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="publicacao-hero">
+        <div class="container">
+            <span class="tag-secao" id="publicacaoQuadro">Conteúdo</span>
+            <h1 id="publicacaoTitulo">Publicação</h1>
+            <p id="publicacaoResumo"></p>
+        </div>
+    </header>
+
+    <main class="secao">
+        <div class="container">
+            <article class="publicacao-artigo" id="publicacaoConteudo">
+                <div class="publicacao-informacoes">
+                    <span>Por <strong id="publicacaoAutor"></strong></span>
+                    <span>Publicado em <strong id="publicacaoData"></strong></span>
+                    <span>Revisão: <strong id="publicacaoRevisor"></strong></span>
+                    <span id="publicacaoAtualizacao"></span>
+                </div>
+
+                <img class="publicacao-imagem" id="publicacaoImagem" src="" alt="" hidden>
+                <div class="publicacao-corpo" id="publicacaoCorpo"></div>
+
+                <section class="bloco-fontes">
+                    <h2>Fontes consultadas</h2>
+                    <ul id="publicacaoFontes"></ul>
+                </section>
+
+                <p class="publicacao-aviso">
+                    Este conteúdo possui finalidade educativa e não substitui orientação jurídica profissional.
+                </p>
+
+                <a class="btn btn-outline-vinho mt-3" id="voltarAoQuadro" href="conteudos.html">Voltar ao quadro</a>
+            </article>
+
+            <div class="estado-vazio" id="publicacaoNaoEncontrada" hidden>
+                <i class="bi bi-exclamation-circle" aria-hidden="true"></i>
+                <p>Publicação não encontrada ou ainda não disponível.</p>
+                <a class="btn btn-vinho" href="conteudos.html">Ver conteúdos</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="rodape">
+        <div class="container">
+            <p><strong>Vozes do Direito</strong> — Projeto de Extensão · UEMS</p>
+            <p>Conteúdo educativo. Não substitui orientação jurídica profissional.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/conteudos.js"></script>
+    <script src="../js/publicacao.js"></script>
+</body>
+
+</html>
