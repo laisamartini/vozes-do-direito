@@ -53,6 +53,33 @@
     text-align: justify;
 }
 
+.publicacao-corpo h2 {
+    margin: 42px 0 16px;
+    color: var(--vinho-principal);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.85rem;
+}
+
+.publicacao-corpo h3 {
+    margin: 28px 0 12px;
+    color: var(--vinho-secundario);
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.publicacao-corpo ul,
+.publicacao-corpo ol {
+    margin: 0 0 24px;
+    padding-left: 1.5rem;
+    color: #454d55;
+    font-size: 1.05rem;
+    line-height: 1.8;
+}
+
+.publicacao-corpo li + li {
+    margin-top: 8px;
+}
+
 .bloco-fontes {
     margin-top: 42px;
     padding-top: 28px;
