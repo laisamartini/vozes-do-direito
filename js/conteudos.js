@@ -45,10 +45,10 @@ const publicacoes = [
             'STJ e STF são tribunais superiores com competências definidas pela Constituição. Eles não funcionam simplesmente como uma “terceira instância” para reexaminar todos os fatos e provas: o STJ uniformiza a interpretação da legislação federal, enquanto o STF trata principalmente de questões constitucionais.',
             'Conhecer esses termos não resolve sozinho uma questão jurídica, mas torna a linguagem do Direito menos distante e facilita a busca por informação confiável.'
         ],
-        dataPublicacao: '2026-09-01',
+        dataPublicacao: '2026-08-23',
         dataAtualizacao: '',
-        autor: 'Equipe Vozes do Direito',
-        revisadoPor: '',
+        autor: 'Maria Clara Matos Recalcatti',
+        revisadoPor: 'Equipe Vozes do Direito',
         tags: ['Linguagem jurídica', 'Acesso à Justiça', 'Jurisprudência'],
         fontes: [
             {
@@ -82,10 +82,10 @@ const publicacoes = [
             'Quem sofre um golpe deve reunir comprovantes, conversas, endereços de sites, dados das transferências e protocolos; comunicar imediatamente as instituições envolvidas; registrar ocorrência; e buscar orientação adequada. A possibilidade de bloqueio ou recuperação do dinheiro varia conforme a rapidez das medidas e as circunstâncias do caso.',
             'Promessas de retorno elevado, pressão para depositar rapidamente, grupos com depoimentos excessivamente positivos e exigência de novos pagamentos para liberar saques são sinais de alerta. Antes de investir, é importante verificar se a instituição e os profissionais estão autorizados pelos órgãos reguladores.'
         ],
-        dataPublicacao: '2026-09-01',
+        dataPublicacao: '2026-08-22',
         dataAtualizacao: '',
-        autor: 'Equipe Vozes do Direito',
-        revisadoPor: '',
+        autor: 'Júlia Gabriele Schiremberck Oliveira',
+        revisadoPor: 'Equipe Vozes do Direito',
         tags: ['JuriNews', 'Fraude eletrônica', 'Direito do Consumidor'],
         fontes: [
             {
@@ -123,10 +123,10 @@ const publicacoes = [
             'O conteúdo divulgado ainda pode envolver outros delitos, como calúnia, difamação ou injúria. Nenhuma dessas hipóteses deve ser presumida apenas porque houve um print: é preciso examinar os fatos e os requisitos previstos em lei.',
             'Antes de compartilhar, pergunte se há autorização, necessidade legítima e risco de exposição. Quando a conversa for importante como prova, preserve o material original e busque orientação sobre a forma adequada de apresentá-lo, evitando divulgação pública desnecessária.'
         ],
-        dataPublicacao: '2026-09-01',
+        dataPublicacao: '2026-08-30',
         dataAtualizacao: '',
-        autor: 'Equipe Vozes do Direito',
-        revisadoPor: '',
+        autor: 'Júlia Gabriele Schiremberck Oliveira',
+        revisadoPor: 'Equipe Vozes do Direito',
         tags: ['Privacidade', 'Direito Digital', 'Responsabilidade civil'],
         fontes: [
             {
@@ -148,180 +148,6 @@ const publicacoes = [
         ],
         imagem: '../imagens/publicacoes/normal-nao-e-legal-print-conversa.webp',
         textoAlternativo: 'Celular sobre mesa clara ao lado de livros jurídicos, com detalhes em vinho e dourado.',
-        status: 'publicado'
-    },
-    {
-        slug: 'o-que-e-uma-liminar',
-        quadro: 'fala-direito',
-        titulo: 'O que é uma liminar?',
-        resumo: 'Entenda o que é essa decisão judicial e por que ela pode ser concedida antes do julgamento definitivo.',
-        conteudo: [
-            'A liminar é uma decisão judicial concedida no início do processo ou antes do julgamento definitivo, quando a situação exige uma resposta mais rápida da Justiça.',
-            'Nos casos de urgência, o juiz analisa se existem elementos que indiquem a probabilidade do direito e o perigo de dano ou de prejuízo ao resultado do processo. Dependendo do caso, a decisão pode ser tomada antes mesmo de a outra parte ser ouvida.',
-            'A medida é provisória e continua produzindo efeitos enquanto estiver válida. Entretanto, pode ser modificada ou revogada pelo juiz a qualquer momento durante o processo.',
-            'Um exemplo comum ocorre quando uma pessoa pede judicialmente o fornecimento urgente de um medicamento essencial. Se a espera pelo julgamento puder causar um dano grave, o juiz poderá analisar a concessão de uma liminar.',
-            'A concessão não significa que a pessoa já venceu definitivamente o processo. A questão ainda será analisada de maneira mais completa antes da decisão final.'
-        ],
-        dataPublicacao: '2026-08-03',
-        dataAtualizacao: '',
-        autor: 'Equipe Vozes do Direito',
-        revisadoPor: 'Equipe Vozes do Direito',
-        tags: ['Processo Civil', 'Tutela provisória', 'Acesso à Justiça'],
-        fontes: [
-            {
-                titulo: 'Código de Processo Civil — arts. 294, 296 e 300',
-                link: 'https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm'
-            }
-        ],
-        imagem: '',
-        textoAlternativo: '',
-        status: 'publicado'
-    },
-    {
-        slug: 'contrato-verbal-nao-tem-validade',
-        quadro: 'mito-ou-verdade',
-        titulo: 'Contrato verbal não tem validade: mito ou verdade?',
-        resumo: 'Descubra quando um acordo feito apenas de forma verbal pode produzir efeitos jurídicos.',
-        conteudo: [
-            'Mito. Em muitas situações, um contrato verbal pode ser válido. O Código Civil estabelece que a declaração de vontade não depende de uma forma especial, a menos que a lei exija expressamente determinada formalidade.',
-            'Isso significa que duas pessoas podem assumir obrigações por meio de uma conversa e, mesmo sem documento assinado, o acordo pode produzir efeitos jurídicos.',
-            'Existem exceções. A lei exige forma específica para determinados negócios. Um exemplo é a escritura pública, em regra necessária para negócios que envolvam direitos reais sobre imóveis com valor superior a trinta salários mínimos.',
-            'O principal problema do contrato verbal costuma ser a prova. Se surgir uma discussão, mensagens, comprovantes, testemunhas e outros registros podem ser importantes para demonstrar o que foi combinado.',
-            'Por isso, sempre que possível, registrar o acordo por escrito ajuda a deixar claros os direitos, os deveres, os prazos e as condições de cada parte.'
-        ],
-        dataPublicacao: '2026-08-03',
-        dataAtualizacao: '',
-        autor: 'Equipe Vozes do Direito',
-        revisadoPor: 'Equipe Vozes do Direito',
-        tags: ['Direito Civil', 'Contratos'],
-        fontes: [
-            {
-                titulo: 'Código Civil — arts. 107 e 108',
-                link: 'https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm'
-            }
-        ],
-        imagem: '',
-        textoAlternativo: '',
-        status: 'publicado'
-    },
-    {
-        slug: 'cobranca-nao-pode-constranger-consumidor',
-        quadro: 'normal-nao-e-legal',
-        titulo: 'Cobrar uma dívida pode. Constranger o consumidor, não.',
-        resumo: 'Estar devendo não autoriza ameaças, humilhações nem exposição pública durante a cobrança.',
-        conteudo: [
-            'A cobrança de uma dívida é permitida, mas precisa respeitar limites. O Código de Defesa do Consumidor proíbe que a pessoa inadimplente seja exposta ao ridículo ou submetida a constrangimento ou ameaça.',
-            'Por isso, divulgar a dívida para colegas, familiares ou vizinhos, usar linguagem ofensiva ou fazer ameaças não são formas normais de cobrança e podem violar os direitos do consumidor.',
-            'O fornecedor pode entrar em contato para informar o débito e buscar uma negociação. O que muda a situação é a maneira utilizada: a comunicação deve ser respeitosa, identificada e dirigida à própria pessoa responsável pela dívida.',
-            'Guardar mensagens, e-mails, números de protocolo e outros registros pode ajudar a demonstrar como a cobrança aconteceu.',
-            'Cada caso precisa ser analisado de acordo com suas circunstâncias. Este conteúdo é educativo e não substitui orientação jurídica individual.'
-        ],
-        dataPublicacao: '2026-08-03',
-        dataAtualizacao: '',
-        autor: 'Equipe Vozes do Direito',
-        revisadoPor: 'Equipe Vozes do Direito',
-        tags: ['Direito do Consumidor', 'Cobrança'],
-        fontes: [
-            {
-                titulo: 'Código de Defesa do Consumidor — art. 42',
-                link: 'https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm'
-            }
-        ],
-        imagem: '',
-        textoAlternativo: '',
-        status: 'publicado'
-    },
-    {
-        slug: 'stj-assedio-consumo-idosos-consignado',
-        quadro: 'jurinews',
-        titulo: 'STJ considera abusiva visita não solicitada a idosos para oferecer consignado',
-        resumo: 'Tribunal entendeu que a oferta de empréstimo na casa de idosos, sem pedido prévio, configura assédio de consumo.',
-        conteudo: [
-            'Em decisão divulgada em 24 de julho de 2026, a Terceira Turma do Superior Tribunal de Justiça manteve a condenação de instituições financeiras por visitas domiciliares não solicitadas a idosos para oferecer empréstimos consignados.',
-            'Segundo o tribunal, essa prática configura assédio de consumo porque explora a vulnerabilidade especial da pessoa idosa e contraria as regras de proteção do Código de Defesa do Consumidor.',
-            'O STJ também afirmou que os bancos respondem pela atuação dos correspondentes bancários que os representam. Assim, a instituição financeira não pode simplesmente afastar sua responsabilidade pelo modo como a oferta foi realizada.',
-            'A decisão não significa que toda visita domiciliar seja automaticamente proibida. O ponto central do caso foi a abordagem comercial não solicitada, dirigida a idosos, para a oferta de crédito consignado.',
-            'O julgamento ocorreu no Recurso Especial 2.226.633. A notícia apresenta o entendimento adotado nesse caso e não substitui a análise de outras situações concretas.'
-        ],
-        dataPublicacao: '2026-08-03',
-        dataAtualizacao: '',
-        autor: 'Equipe Vozes do Direito',
-        revisadoPor: 'Equipe Vozes do Direito',
-        tags: ['Jurisprudência', 'Direito do Consumidor', 'Pessoa idosa'],
-        fontes: [
-            {
-                titulo: 'STJ — Visita não solicitada a idosos para oferecer empréstimo consignado é assédio de consumo',
-                link: 'https://www.stj.jus.br/sites/portalp/Paginas/Comunicacao/Noticias/2026/24072026-Visita-nao-solicitada-a-idosos-para-oferecer-emprestimo-consignado-e-assedio-de-consumo.aspx'
-            },
-            {
-                titulo: 'Código de Defesa do Consumidor — arts. 39 e 54-C',
-                link: 'https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm'
-            }
-        ],
-        imagem: '',
-        textoAlternativo: '',
-        status: 'publicado'
-    },
-    {
-        slug: 'posso-desistir-de-compra-pela-internet',
-        quadro: 'pergunta-da-semana',
-        titulo: 'Posso desistir de uma compra feita pela internet?',
-        resumo: 'Entenda o direito de arrependimento e o prazo previsto para compras realizadas fora do estabelecimento comercial.',
-        conteudo: [
-            'Em regra, sim. O Código de Defesa do Consumidor permite desistir de uma contratação feita fora do estabelecimento comercial, como ocorre normalmente em compras pela internet ou por telefone.',
-            'O prazo é de sete dias, contado da assinatura do contrato ou do recebimento do produto ou serviço. Esse direito é conhecido como direito de arrependimento.',
-            'Quando o direito é exercido dentro do prazo, os valores pagos devem ser devolvidos de imediato, com atualização monetária. O Decreto do Comércio Eletrônico também determina que o fornecedor informe meios claros para o consumidor comunicar a desistência.',
-            'A regra dos sete dias não se aplica automaticamente às compras feitas dentro de uma loja física apenas porque a pessoa mudou de ideia. Nessa situação, a possibilidade de troca ou devolução depende da política oferecida pelo estabelecimento, salvo quando existe defeito ou outra irregularidade.',
-            'É recomendável guardar a confirmação do pedido de cancelamento e os comprovantes da compra. Situações específicas podem depender do produto, do serviço e das condições da contratação.'
-        ],
-        dataPublicacao: '2026-08-03',
-        dataAtualizacao: '',
-        autor: 'Equipe Vozes do Direito',
-        revisadoPor: 'Equipe Vozes do Direito',
-        tags: ['Direito do Consumidor', 'Compras online'],
-        fontes: [
-            {
-                titulo: 'Código de Defesa do Consumidor — art. 49',
-                link: 'https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm'
-            },
-            {
-                titulo: 'Decreto do Comércio Eletrônico — art. 5º',
-                link: 'https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d7962.htm'
-            }
-        ],
-        imagem: '',
-        textoAlternativo: '',
-        status: 'publicado'
-    },
-    {
-        slug: 'vale-a-pena-ver-amicus-curiae',
-        quadro: 'vale-a-pena-ver-direito',
-        titulo: 'Vale a pena ver: o que é amicus curiae?',
-        resumo: 'Um conteúdo curto do STF explica como o “amigo da corte” pode contribuir em julgamentos relevantes.',
-        conteudo: [
-            'A expressão latina amicus curiae significa “amigo da corte”. Ela identifica a pessoa, o órgão ou a entidade admitida em um processo para oferecer informações e argumentos que ajudem o tribunal a compreender melhor uma questão relevante.',
-            'O amicus curiae não ocupa exatamente a mesma posição das partes do processo. Sua participação busca ampliar e qualificar o debate, especialmente quando a decisão pode afetar grupos sociais ou produzir efeitos que ultrapassam o caso individual.',
-            'O episódio do projeto Direito sem Juridiquês, produzido pelo Supremo Tribunal Federal, apresenta esse conceito em linguagem acessível e mostra por que diferentes perspectivas podem ser importantes em julgamentos de grande repercussão.',
-            'Vale a pena assistir porque o tema aproxima processo, participação social e democracia. É também um bom exemplo de como expressões jurídicas podem ser explicadas sem perder a precisão.',
-            'Depois de assistir, observe uma pergunta central: de que maneira a participação de especialistas e entidades pode melhorar a qualidade de uma decisão judicial?'
-        ],
-        dataPublicacao: '2026-08-03',
-        dataAtualizacao: '',
-        autor: 'Equipe Vozes do Direito',
-        revisadoPor: 'Equipe Vozes do Direito',
-        tags: ['Processo', 'Participação social', 'STF'],
-        fontes: [
-            {
-                titulo: 'STF — Direito sem Juridiquês: novo episódio explica o que é amicus curiae',
-                link: 'https://noticias.stf.jus.br/postsnoticias/direito-sem-juridiques-novo-episodio-explica-o-que-e-amicus-curiae/'
-            },
-            {
-                titulo: 'Código de Processo Civil — art. 138',
-                link: 'https://www.planalto.gov.br/ccivil_03/_ato2015-2018/2015/lei/l13105.htm'
-            }
-        ],
-        imagem: '',
-        textoAlternativo: '',
         status: 'publicado'
     }
 ];
