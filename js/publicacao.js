@@ -60,11 +60,40 @@ function renderizarPublicacao() {
         : '';
 
     const corpo = document.getElementById('publicacaoCorpo');
-    corpo.replaceChildren(...publicacao.conteudo.map(function (paragrafo) {
-        const elemento = document.createElement('p');
-        elemento.textContent = paragrafo;
-        return elemento;
-    }));
+    const elementosDoCorpo = publicacao.conteudo.map(function (bloco) {
+        if (typeof bloco === 'string') {
+            const paragrafo = document.createElement('p');
+            paragrafo.textContent = bloco;
+            return paragrafo;
+        }
+
+        if (bloco.tipo === 'titulo') {
+            const titulo = document.createElement('h2');
+            titulo.textContent = bloco.texto;
+            return titulo;
+        }
+
+        if (bloco.tipo === 'subtitulo') {
+            const subtitulo = document.createElement('h3');
+            subtitulo.textContent = bloco.texto;
+            return subtitulo;
+        }
+
+        if (bloco.tipo === 'lista') {
+            const lista = document.createElement(bloco.ordenada ? 'ol' : 'ul');
+            bloco.itens.forEach(function (texto) {
+                const item = document.createElement('li');
+                item.textContent = texto;
+                lista.appendChild(item);
+            });
+            return lista;
+        }
+
+        const paragrafo = document.createElement('p');
+        paragrafo.textContent = bloco.texto || '';
+        return paragrafo;
+    });
+    corpo.replaceChildren(...elementosDoCorpo);
 
     const imagem = document.getElementById('publicacaoImagem');
     if (publicacao.imagem) {
