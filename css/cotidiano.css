@@ -110,6 +110,79 @@
 .situacao-card p {
     color: #5d646b;
     line-height: 1.7;
+    margin-bottom: 16px;
+}
+
+.situacao-card details {
+    border-top: 1px solid rgba(91, 19, 33, 0.1);
+    margin-top: 20px;
+    padding-top: 16px;
+}
+
+.situacao-card summary {
+    color: var(--vinho-principal);
+    cursor: pointer;
+    font-weight: 700;
+    list-style-position: outside;
+    margin-left: 18px;
+}
+
+.situacao-card summary:focus-visible {
+    border-radius: 6px;
+    outline: 3px solid rgba(200, 162, 76, 0.45);
+    outline-offset: 4px;
+}
+
+.situacao-detalhes {
+    padding-top: 14px;
+}
+
+.situacao-detalhes h4 {
+    color: var(--grafite);
+    font-size: 0.92rem;
+    font-weight: 800;
+    margin: 14px 0 8px;
+    text-transform: uppercase;
+}
+
+.situacao-detalhes ul {
+    color: #5d646b;
+    line-height: 1.65;
+    margin-bottom: 12px;
+    padding-left: 20px;
+}
+
+.situacao-detalhes .base-legal {
+    background: var(--creme);
+    border-left: 3px solid var(--dourado);
+    border-radius: 0 10px 10px 0;
+    font-size: 0.86rem;
+    margin: 12px 0 0;
+    padding: 10px 12px;
+}
+
+.canais-ajuda {
+    display: grid;
+    gap: 18px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.canal-ajuda {
+    background: var(--branco);
+    border: 1px solid rgba(91, 19, 33, 0.08);
+    border-radius: 18px;
+    padding: 20px;
+}
+
+.canal-ajuda h3 {
+    color: var(--vinho-principal);
+    font-family: 'Playfair Display', serif;
+    font-size: 1.25rem;
+}
+
+.canal-ajuda p {
+    color: #5d646b;
+    line-height: 1.65;
     margin-bottom: 0;
 }
 
@@ -171,5 +244,9 @@
 
     .passo-item {
         flex-direction: column;
+    }
+
+    .canais-ajuda {
+        grid-template-columns: 1fr;
     }
 }

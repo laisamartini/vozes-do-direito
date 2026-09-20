@@ -107,7 +107,9 @@
 
                 </div>
 
-                <div id="resultadoMensagem" class="resultado-mensagem"></div>
+                <div id="resultadoMensagem" class="resultado-mensagem" role="status" aria-live="polite"></div>
+
+                <p id="contadorTermos" class="contador-termos" aria-live="polite"></p>
 
                 <div class="row g-4" id="listaTermos"></div>
 
@@ -150,6 +152,16 @@
                     <h3>Explicação completa</h3>
 
                     <p id="modalTermoDetalhes"></p>
+
+                    <div id="modalTermoExemploBloco" class="modal-informacao" hidden>
+                        <h3>Exemplo prático</h3>
+                        <p id="modalTermoExemplo"></p>
+                    </div>
+
+                    <div id="modalTermoBaseBloco" class="modal-informacao" hidden>
+                        <h3>Base jurídica</h3>
+                        <p id="modalTermoBase"></p>
+                    </div>
                 </div>
 
         </div>

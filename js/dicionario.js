@@ -2,12 +2,17 @@ const campoPesquisa = document.getElementById('campoPesquisa');
 const listaTermos = document.getElementById('listaTermos');
 const resultadoMensagem = document.getElementById('resultadoMensagem');
 const listaSugestoes = document.getElementById('listaSugestoes');
+const contadorTermos = document.getElementById('contadorTermos');
 
 const modalTermo = new bootstrap.Modal(document.getElementById('modalTermo'));
 const modalTermoArea = document.getElementById('modalTermoArea');
 const modalTermoTitulo = document.getElementById('modalTermoTitulo');
 const modalTermoResumo = document.getElementById('modalTermoResumo');
 const modalTermoDetalhes = document.getElementById('modalTermoDetalhes');
+const modalTermoExemploBloco = document.getElementById('modalTermoExemploBloco');
+const modalTermoExemplo = document.getElementById('modalTermoExemplo');
+const modalTermoBaseBloco = document.getElementById('modalTermoBaseBloco');
+const modalTermoBase = document.getElementById('modalTermoBase');
 
 function normalizarTexto(texto) {
     return texto
@@ -18,7 +23,14 @@ function normalizarTexto(texto) {
 }
 
 function termoCombinaComBusca(dados, textoDigitado) {
-    const conteudo = normalizarTexto(`${dados.termo} ${dados.area} ${dados.resumo}`);
+    const conteudo = normalizarTexto([
+        dados.termo,
+        dados.area,
+        dados.resumo,
+        dados.detalhes,
+        dados.exemplo,
+        dados.baseLegal
+    ].filter(Boolean).join(' '));
     const palavrasBuscadas = normalizarTexto(textoDigitado).split(/\s+/).filter(Boolean);
 
     return palavrasBuscadas.every(function (palavra) {
@@ -63,7 +75,14 @@ function criarCard(dados) {
 }
 
 function renderizarTermos(termos) {
-    listaTermos.replaceChildren(...termos.map(criarCard));
+    const termosOrdenados = [...termos].sort(function (a, b) {
+        return a.termo.localeCompare(b.termo, 'pt-BR');
+    });
+
+    listaTermos.replaceChildren(...termosOrdenados.map(criarCard));
+    contadorTermos.textContent = termosOrdenados.length === termosJuridicos.length
+        ? `${termosOrdenados.length} termos disponíveis`
+        : `${termosOrdenados.length} de ${termosJuridicos.length} termos encontrados`;
 }
 
 function abrirModal(dados) {
@@ -71,6 +90,11 @@ function abrirModal(dados) {
     modalTermoTitulo.textContent = dados.termo;
     modalTermoResumo.textContent = dados.resumo;
     modalTermoDetalhes.textContent = dados.detalhes;
+
+    modalTermoExemploBloco.hidden = !dados.exemplo;
+    modalTermoExemplo.textContent = dados.exemplo || '';
+    modalTermoBaseBloco.hidden = !dados.baseLegal;
+    modalTermoBase.textContent = dados.baseLegal || '';
     modalTermo.show();
 }
 
