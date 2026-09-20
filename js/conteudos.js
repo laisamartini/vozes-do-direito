@@ -32,6 +32,69 @@
 
 const publicacoes = [
     {
+        slug: 'comprei-na-internet-e-me-arrependi-posso-devolver',
+        quadro: 'pergunta-da-semana',
+        titulo: 'Comprei na internet e me arrependi: em quantos dias posso devolver?',
+        resumo: 'Entenda o prazo de sete dias, como exercer o direito de arrependimento e por que a regra é diferente nas compras feitas em loja física.',
+        conteudo: [
+            { tipo: 'paragrafo', texto: 'Você comprou alguma coisa pela internet e, quando o produto chegou, percebeu que não era bem o que esperava? Talvez a cor fosse diferente, o tamanho não servisse ou você simplesmente tenha mudado de ideia. Nessas situações, o Código de Defesa do Consumidor prevê uma proteção específica para as contratações realizadas fora do estabelecimento comercial.' },
+            { tipo: 'titulo', texto: 'Resposta curta' },
+            { tipo: 'paragrafo', texto: 'Em regra, quem compra um produto ou contrata um serviço fora do estabelecimento comercial — como pela internet, telefone, catálogo ou venda em domicílio — pode desistir do contrato no prazo de sete dias, contados da assinatura ou do recebimento do produto ou serviço, conforme o caso.' },
+            { tipo: 'titulo', texto: 'O que é o direito de arrependimento?' },
+            { tipo: 'paragrafo', texto: 'O direito de arrependimento está previsto no artigo 49 do Código de Defesa do Consumidor. Ele permite que o consumidor desista de uma contratação feita fora do estabelecimento comercial sem precisar apresentar uma justificativa.' },
+            { tipo: 'paragrafo', texto: 'Quando o direito é exercido dentro do prazo, os valores eventualmente pagos devem ser devolvidos de imediato e monetariamente atualizados. Nas compras pela internet, o Decreto nº 7.962/2013 também determina que o fornecedor informe, de forma clara, os meios adequados para o exercício do arrependimento e confirme imediatamente o recebimento da solicitação.' },
+            { tipo: 'subtitulo', texto: 'A regra pode alcançar contratações feitas:' },
+            { tipo: 'lista', itens: ['pela internet;', 'por telefone;', 'por catálogo ou outro meio de venda a distância;', 'em domicílio ou em outro local fora do estabelecimento comercial.'] },
+            { tipo: 'titulo', texto: 'Quando começa a contar o prazo?' },
+            { tipo: 'paragrafo', texto: 'O CDC estabelece que os sete dias são contados da assinatura do contrato ou do recebimento do produto ou serviço. Na compra de um produto pela internet, a referência prática costuma ser a data em que ele foi recebido. Em uma contratação de serviço, a data da assinatura pode ser a referência, de acordo com as circunstâncias do contrato.' },
+            { tipo: 'paragrafo', texto: 'A contagem é feita em dias corridos. Por segurança, é importante comunicar a desistência ao fornecedor dentro do prazo e guardar a confirmação, o número de protocolo, a mensagem ou outro comprovante do pedido.' },
+            { tipo: 'titulo', texto: 'Preciso explicar por que desisti?' },
+            { tipo: 'paragrafo', texto: 'Não. Dentro do prazo legal e nas situações abrangidas pelo artigo 49, o consumidor não precisa demonstrar defeito no produto nem justificar a mudança de decisão. O direito existe justamente porque, na contratação a distância, não há o mesmo contato direto com o produto, o serviço e o ambiente de venda.' },
+            { tipo: 'titulo', texto: 'Como exercer o direito de arrependimento?' },
+            { tipo: 'lista', itens: ['Comunique ao fornecedor, dentro do prazo de sete dias, que deseja desistir da contratação.', 'Use um canal que permita guardar prova do pedido, como e-mail, chat, formulário eletrônico ou protocolo de atendimento.', 'Siga as orientações de devolução fornecidas pela empresa e conserve o produto, os acessórios e os documentos recebidos na medida do possível.', 'Guarde a confirmação do cancelamento, o comprovante de envio e os registros relacionados ao estorno ou à restituição.'] },
+            { tipo: 'paragrafo', texto: 'O Decreto nº 7.962/2013 estabelece que o consumidor pode exercer o arrependimento pela mesma ferramenta utilizada para contratar, sem prejuízo de outros meios oferecidos pelo fornecedor. Também prevê que o cancelamento alcance os contratos acessórios, sem ônus para o consumidor.' },
+            { tipo: 'titulo', texto: 'E se a compra foi feita em loja física?' },
+            { tipo: 'paragrafo', texto: 'Quando a compra é realizada dentro de uma loja física e o produto não apresenta vício, a simples mudança de ideia não gera, por si só, um direito legal de troca ou devolução. A loja pode oferecer essa possibilidade como política comercial; se fizer uma oferta de troca ou devolução, deverá cumprir as condições informadas ao consumidor.' },
+            { tipo: 'paragrafo', texto: 'A situação é diferente quando o produto apresenta vício de qualidade ou quantidade. Pelo artigo 18 do CDC, o fornecedor tem, em regra, até 30 dias para sanar o problema. Se o vício não for resolvido nesse prazo, o consumidor poderá escolher entre a substituição do produto, a restituição da quantia paga ou o abatimento proporcional do preço.' },
+            { tipo: 'paragrafo', texto: 'O próprio CDC prevê exceções em que essas alternativas podem ser exigidas imediatamente, como quando o conserto puder comprometer a qualidade ou as características do produto, diminuir seu valor ou quando se tratar de produto essencial. Por isso, o direito de arrependimento e os direitos relacionados a um produto com vício não devem ser confundidos.' },
+            { tipo: 'titulo', texto: 'Proteção da liberdade de escolha' },
+            { tipo: 'paragrafo', texto: 'A doutrina de Direito do Consumidor relaciona o prazo de reflexão à proteção da liberdade de escolha. Nas vendas a distância, o consumidor pode decidir com base em fotografias, descrições, publicidade e outras informações fornecidas pelo vendedor, sem examinar pessoalmente o produto antes da contratação.' },
+            { tipo: 'paragrafo', texto: 'Essa proteção busca reduzir a diferença de informação e permitir que o consumidor reavalie a decisão depois de ter contato efetivo com o produto ou de compreender melhor o serviço contratado.' },
+            { tipo: 'titulo', texto: 'Boa-fé e possíveis abusos' },
+            { tipo: 'paragrafo', texto: 'O direito de arrependimento deve ser exercido de acordo com a boa-fé. Abrir a embalagem ou examinar o produto não elimina automaticamente o direito, pois esse contato pode ser necessário para avaliar a compra. Porém, situações de uso prolongado, dano intencional ou tentativa de obter vantagem indevida podem gerar discussão sobre abuso no caso concreto.' },
+            { tipo: 'paragrafo', texto: 'Isso não autoriza o fornecedor a recusar automaticamente todo pedido quando a embalagem foi aberta. A análise deve considerar a natureza do produto, a forma de utilização e as circunstâncias da devolução.' },
+            { tipo: 'titulo', texto: 'Em resumo' },
+            { tipo: 'lista', itens: ['Compra ou contratação feita fora do estabelecimento comercial: o consumidor pode exercer o direito de arrependimento em até sete dias, nos termos do artigo 49 do CDC.', 'Compra em loja física sem vício: a troca por simples mudança de ideia depende da política oferecida pelo estabelecimento.', 'Produto com vício: aplicam-se as regras dos artigos 18 e seguintes do CDC, com possibilidade de reparo e outras soluções previstas em lei.'] },
+            { tipo: 'paragrafo', texto: 'Este conteúdo tem finalidade educativa. Situações específicas podem exigir a análise do contrato, do produto, do serviço e das circunstâncias do caso.' }
+        ],
+        dataPublicacao: '2026-09-04',
+        dataAtualizacao: '',
+        autor: 'Júlia Gabriele Schiremberck Oliveira',
+        revisadoPor: 'Equipe Vozes do Direito',
+        tags: ['Direito do Consumidor', 'Compras on-line', 'Direito de arrependimento'],
+        fontes: [
+            {
+                titulo: 'Código de Defesa do Consumidor — arts. 18 e 49',
+                link: 'https://www.planalto.gov.br/ccivil_03/leis/l8078compilado.htm'
+            },
+            {
+                titulo: 'Decreto nº 7.962/2013 — comércio eletrônico e direito de arrependimento',
+                link: 'https://www.planalto.gov.br/ccivil_03/_ato2011-2014/2013/decreto/d7962.htm'
+            },
+            {
+                titulo: 'Revista REASE — estudo sobre o direito de arrependimento nas relações de consumo',
+                link: 'https://periodicorease.pro.br/rease/article/view/6126/2366'
+            },
+            {
+                titulo: 'Revista do UBM — proteção do consumidor no comércio eletrônico',
+                link: 'https://revista.ubm.br/index.php/ensinoextensao29/article/view/2700/899'
+            }
+        ],
+        imagem: '',
+        textoAlternativo: '',
+        status: 'publicado'
+    },
+    {
         slug: 'o-que-esta-acontecendo-com-o-stf-caso-master',
         quadro: 'jurinews',
         titulo: 'O que está acontecendo com o STF no caso Banco Master?',
