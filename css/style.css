@@ -30,7 +30,7 @@ a {
 
 .navbar {
     background: var(--vinho-principal);
-    padding: 16px 0;
+    padding: 8px 0;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
 }
 
@@ -44,16 +44,11 @@ a {
     color: var(--branco);
 }
 
-.marca-icone {
-    width: 38px;
-    height: 38px;
-    background: rgba(200, 162, 76, 0.18);
-    color: var(--dourado);
-    border: 1px solid rgba(200, 162, 76, 0.45);
-    border-radius: 50%;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
+.logo-navbar {
+    display: block;
+    width: auto;
+    height: 68px;
+    object-fit: contain;
 }
 
 .nav-link {

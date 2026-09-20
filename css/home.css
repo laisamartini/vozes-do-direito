@@ -56,29 +56,13 @@
     box-shadow: 0 25px 60px rgba(0, 0, 0, 0.18);
 }
 
-.simbolo-principal {
-    width: 155px;
-    height: 155px;
-    border: 2px solid var(--dourado);
-    border-radius: 50%;
-    margin: 0 auto 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    position: relative;
-}
-
-.simbolo-principal i {
-    font-size: 2.8rem;
-    color: var(--dourado);
-}
-
-.simbolo-principal span {
-    width: 28px;
-    height: 2px;
-    background: var(--dourado);
-    display: inline-block;
+.logo-hero {
+    display: block;
+    width: min(100%, 340px);
+    height: auto;
+    margin: 0 auto 28px;
+    border-radius: 24px;
+    filter: drop-shadow(0 16px 24px rgba(0, 0, 0, 0.16));
 }
 
 .hero-card h2 {
