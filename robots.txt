@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://laisamartini.github.io/vozes-do-direito/sitemap.xml
+Sitemap: https://projetovozesdodireito.com.br/sitemap.xml

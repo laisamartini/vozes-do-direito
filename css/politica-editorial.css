@@ -1,0 +1,164 @@
+.politica-hero {
+    padding: 150px 0 80px;
+    background:
+        radial-gradient(circle at top right, rgba(200, 162, 76, 0.18), transparent 34%),
+        linear-gradient(135deg, var(--vinho-principal), var(--vinho-secundario));
+    color: var(--branco);
+    text-align: center;
+}
+
+.politica-hero h1 {
+    margin-bottom: 18px;
+    font-family: 'Playfair Display', serif;
+    font-size: 3.6rem;
+}
+
+.politica-hero p {
+    max-width: 760px;
+    margin: 0 auto;
+    color: rgba(255, 255, 255, 0.84);
+    font-size: 1.15rem;
+    line-height: 1.8;
+}
+
+.politica-conteudo {
+    max-width: 1000px;
+}
+
+.politica-conteudo h2 {
+    margin-bottom: 18px;
+    color: var(--vinho-principal);
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+}
+
+.politica-introducao {
+    margin-bottom: 64px;
+    padding: 38px;
+    border-left: 5px solid var(--dourado);
+    border-radius: 0 22px 22px 0;
+    background: var(--branco);
+    box-shadow: 0 12px 35px rgba(91, 19, 33, 0.08);
+}
+
+.politica-introducao p,
+.politica-card p,
+.politica-contato p {
+    color: #5d646b;
+    line-height: 1.8;
+}
+
+.politica-introducao p:last-child,
+.politica-card p,
+.politica-contato p {
+    margin-bottom: 0;
+}
+
+.fluxo-editorial {
+    display: grid;
+    gap: 16px;
+    margin: 0 0 64px;
+    padding: 0;
+    list-style: none;
+    counter-reset: etapa;
+}
+
+.fluxo-editorial li {
+    position: relative;
+    padding: 22px 24px 22px 78px;
+    border: 1px solid rgba(91, 19, 33, 0.08);
+    border-radius: 18px;
+    background: var(--branco);
+    color: #5d646b;
+    line-height: 1.7;
+    counter-increment: etapa;
+}
+
+.fluxo-editorial li::before {
+    position: absolute;
+    top: 50%;
+    left: 22px;
+    display: grid;
+    width: 38px;
+    height: 38px;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--vinho-principal);
+    color: var(--dourado);
+    font-weight: 700;
+    content: counter(etapa);
+    transform: translateY(-50%);
+}
+
+.politica-grade {
+    margin-bottom: 64px;
+}
+
+.politica-card {
+    height: 100%;
+    padding: 32px;
+    border: 1px solid rgba(91, 19, 33, 0.08);
+    border-radius: 22px;
+    background: var(--branco);
+    box-shadow: 0 10px 28px rgba(91, 19, 33, 0.07);
+}
+
+.politica-card i {
+    display: block;
+    margin-bottom: 18px;
+    color: var(--dourado);
+    font-size: 2rem;
+}
+
+.politica-card h2 {
+    font-size: 1.55rem;
+}
+
+.politica-contato {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 38px;
+    border-radius: 24px;
+    background: rgba(200, 162, 76, 0.14);
+}
+
+.politica-contato h2 {
+    margin-bottom: 10px;
+}
+
+.politica-contato .btn {
+    flex-shrink: 0;
+}
+
+@media (max-width: 767px) {
+    .politica-hero {
+        padding: 135px 0 65px;
+    }
+
+    .politica-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .politica-introducao,
+    .politica-card,
+    .politica-contato {
+        padding: 26px;
+    }
+
+    .politica-contato {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .fluxo-editorial li {
+        padding: 68px 22px 22px;
+    }
+
+    .fluxo-editorial li::before {
+        top: 20px;
+        left: 22px;
+        transform: none;
+    }
+}

@@ -22,6 +22,25 @@ body {
     color: var(--grafite);
 }
 
+.link-pular-conteudo {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 2000;
+    padding: 12px 18px;
+    border-radius: 10px;
+    background: var(--branco);
+    color: var(--vinho-principal);
+    font-weight: 700;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    transform: translateY(-160%);
+    transition: transform 0.2s ease;
+}
+
+.link-pular-conteudo:focus {
+    transform: translateY(0);
+}
+
 a {
     text-decoration: none;
 }
@@ -230,6 +249,17 @@ a {
     margin: 5px 0;
 }
 
+.rodape-links a {
+    color: var(--dourado);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+}
+
+.rodape-links a:hover,
+.rodape-links a:focus {
+    color: var(--branco);
+}
+
 /* Acessibilidade e acabamento */
 
 html {
@@ -258,6 +288,21 @@ textarea {
 .form-control:focus {
     outline: 3px solid rgba(200, 162, 76, 0.35);
     outline-offset: 3px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        transition-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+    }
 }
 
 .btn {

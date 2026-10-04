@@ -31,7 +31,12 @@ function criarCardPublicacao(publicacao) {
 
     const meta = document.createElement('small');
     meta.className = 'publicacao-meta';
-    meta.textContent = formatarData(publicacao.dataPublicacao);
+    const dataMaisRecente = publicacao.dataAtualizacao || publicacao.dataPublicacao;
+    const rotuloData = publicacao.dataAtualizacao ? 'Atualizado em' : 'Publicado em';
+    const tempo = document.createElement('time');
+    tempo.dateTime = dataMaisRecente;
+    tempo.textContent = formatarData(dataMaisRecente);
+    meta.append(`${rotuloData} `, tempo);
 
     card.append(categoria, titulo, resumo, meta);
     link.appendChild(card);

@@ -44,20 +44,50 @@ function renderizarPublicacao() {
     }
 
     const quadro = quadros[publicacao.quadro];
+    const urlPublicacao = `https://projetovozesdodireito.com.br/paginas/publicacao.html?slug=${encodeURIComponent(publicacao.slug)}`;
     document.title = `${publicacao.titulo} | Vozes do Direito`;
     document.querySelector('meta[name="description"]').content = publicacao.resumo;
+    document.getElementById('publicacaoCanonical').href = urlPublicacao;
+    document.getElementById('publicacaoOgTitulo').content = publicacao.titulo;
+    document.getElementById('publicacaoOgDescricao').content = publicacao.resumo;
+    document.getElementById('publicacaoOgUrl').content = urlPublicacao;
     document.getElementById('publicacaoQuadro').textContent = quadro?.nome || 'Conteúdo';
     document.getElementById('publicacaoTitulo').textContent = publicacao.titulo;
     document.getElementById('publicacaoResumo').textContent = publicacao.resumo;
     document.getElementById('publicacaoAutor').textContent = publicacao.autor;
-    document.getElementById('publicacaoData').textContent = formatarData(publicacao.dataPublicacao);
+    const dataPublicacao = document.getElementById('publicacaoData');
+    dataPublicacao.dateTime = publicacao.dataPublicacao;
+    dataPublicacao.textContent = formatarData(publicacao.dataPublicacao);
     document.getElementById('publicacaoRevisor').textContent = publicacao.revisadoPor || 'Não informado';
     document.getElementById('voltarAoQuadro').href = quadro?.pagina || 'conteudos.html';
 
     const atualizacao = document.getElementById('publicacaoAtualizacao');
-    atualizacao.textContent = publicacao.dataAtualizacao
-        ? `Atualizado em ${formatarData(publicacao.dataAtualizacao)}`
-        : '';
+    if (publicacao.dataAtualizacao) {
+        const dataAtualizacao = atualizacao.querySelector('time');
+        dataAtualizacao.dateTime = publicacao.dataAtualizacao;
+        dataAtualizacao.textContent = formatarData(publicacao.dataAtualizacao);
+        atualizacao.hidden = false;
+    }
+
+    const dadosEstruturados = {
+        '@context': 'https://schema.org',
+        '@type': 'Article',
+        headline: publicacao.titulo,
+        description: publicacao.resumo,
+        datePublished: publicacao.dataPublicacao,
+        dateModified: publicacao.dataAtualizacao || publicacao.dataPublicacao,
+        author: { '@type': 'Person', name: publicacao.autor },
+        publisher: {
+            '@type': 'Organization',
+            name: 'Vozes do Direito',
+            logo: {
+                '@type': 'ImageObject',
+                url: 'https://projetovozesdodireito.com.br/imagens/logo-vozes-do-direito.png'
+            }
+        },
+        mainEntityOfPage: urlPublicacao
+    };
+    document.getElementById('publicacaoDadosEstruturados').textContent = JSON.stringify(dadosEstruturados);
 
     const corpo = document.getElementById('publicacaoCorpo');
     const elementosDoCorpo = publicacao.conteudo.map(function (bloco) {
