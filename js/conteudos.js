@@ -32,6 +32,118 @@
 
 const publicacoes = [
     {
+        slug: 'patrimonio-dos-socios-e-uniao-estavel-mito-ou-verdade',
+        quadro: 'mito-ou-verdade',
+        titulo: 'Patrimônio dos sócios e união estável: mito ou verdade?',
+        resumo: 'Entenda a autonomia patrimonial da empresa e em que medida os direitos da união estável se aproximam dos direitos do casamento.',
+        conteudo: [
+            { tipo: 'paragrafo', texto: 'Nesta edição do Mito ou Verdade, analisamos duas afirmações frequentes: se o patrimônio dos sócios é igual ao patrimônio da empresa e se a união estável garante os mesmos direitos que o casamento.' },
+            { tipo: 'titulo', texto: '“O patrimônio dos sócios é igual ao patrimônio da empresa.”' },
+            { tipo: 'subtitulo', texto: 'MITO' },
+            { tipo: 'paragrafo', texto: 'A pessoa jurídica possui personalidade própria e, em regra, não se confunde com as pessoas que a integram. Por isso, os bens, direitos e obrigações da empresa são separados do patrimônio particular de seus sócios.' },
+            { tipo: 'paragrafo', texto: 'O artigo 49-A do Código Civil chama essa separação de autonomia patrimonial da pessoa jurídica. A regra protege a organização da atividade econômica e permite que os riscos assumidos pela empresa não sejam automaticamente transferidos ao patrimônio pessoal dos sócios.' },
+            { tipo: 'titulo', texto: 'Quando os bens pessoais podem ser atingidos?' },
+            { tipo: 'paragrafo', texto: 'A separação patrimonial não pode ser utilizada para praticar abusos. O artigo 50 do Código Civil permite a desconsideração da personalidade jurídica quando houver abuso caracterizado por desvio de finalidade ou confusão patrimonial.' },
+            { tipo: 'subtitulo', texto: 'Desvio de finalidade' },
+            { tipo: 'paragrafo', texto: 'Ocorre quando a pessoa jurídica é utilizada com o propósito de lesar credores ou praticar atos ilícitos. Não basta que a empresa tenha dívidas ou enfrente dificuldades financeiras: é necessário demonstrar os requisitos previstos em lei.' },
+            { tipo: 'subtitulo', texto: 'Confusão patrimonial' },
+            { tipo: 'paragrafo', texto: 'Acontece quando, na prática, não existe separação entre o patrimônio da empresa e o de seus sócios, como no pagamento repetido de obrigações pessoais com recursos empresariais ou na transferência de bens sem contraprestação efetiva, conforme as hipóteses legais.' },
+            { tipo: 'paragrafo', texto: 'Nessas situações, o juiz pode estender determinadas obrigações aos bens particulares dos administradores ou sócios beneficiados direta ou indiretamente pelo abuso. A medida é excepcional e não significa que a empresa deixe de existir nem que todos os patrimônios sejam permanentemente unidos.' },
+            { tipo: 'titulo', texto: '“A união estável garante os mesmos direitos que o casamento.”' },
+            { tipo: 'subtitulo', texto: 'VERDADE, COM RESSALVAS' },
+            { tipo: 'paragrafo', texto: 'A união estável é reconhecida como entidade familiar quando existe convivência pública, contínua e duradoura, estabelecida com o objetivo de constituição de família. Diferentemente do casamento, ela pode existir sem cerimônia ou registro em cartório, desde que seus requisitos estejam presentes.' },
+            { tipo: 'paragrafo', texto: 'Casamento e união estável recebem proteção jurídica e produzem importantes direitos e deveres familiares. Entretanto, não são institutos formalmente idênticos: o casamento depende de habilitação e celebração, gera certidão e altera o estado civil; a união estável pode precisar ser comprovada quando não foi formalizada e não altera o estado civil dos conviventes.' },
+            { tipo: 'titulo', texto: 'Direitos e deveres na união estável' },
+            { tipo: 'paragrafo', texto: 'O Código Civil estabelece para os companheiros deveres de lealdade, respeito e assistência, além da guarda, do sustento e da educação dos filhos. Se o casal não fizer contrato escrito escolhendo outro regime, aplica-se, em regra, a comunhão parcial de bens.' },
+            { tipo: 'paragrafo', texto: 'No campo sucessório, o Supremo Tribunal Federal considerou inconstitucional diferenciar o regime de sucessão do cônjuge e do companheiro. Assim, deve ser aplicado à união estável o regime sucessório previsto para o casamento, observadas as circunstâncias do caso concreto.' },
+            { tipo: 'paragrafo', texto: 'Por isso, dizer que a união estável não gera direitos é mito. Ao mesmo tempo, afirmar que ela é igual ao casamento em todos os aspectos também seria impreciso. Há proteção jurídica semelhante em diversos temas, mas permanecem diferenças de forma, prova e constituição do vínculo.' },
+            { tipo: 'titulo', texto: 'Em resumo' },
+            { tipo: 'lista', itens: ['O patrimônio da pessoa jurídica é, em regra, separado do patrimônio dos sócios.', 'A desconsideração pode alcançar bens particulares quando estiverem presentes os requisitos legais de abuso.', 'A união estável é uma entidade familiar protegida pelo Direito e produz direitos e deveres.', 'Casamento e união estável possuem efeitos semelhantes em diferentes áreas, mas não são formalmente idênticos.'] },
+            { tipo: 'paragrafo', texto: 'Este conteúdo tem finalidade educativa. Questões patrimoniais, empresariais, familiares e sucessórias dependem dos documentos e das circunstâncias de cada caso.' }
+        ],
+        dataPublicacao: '2026-09-28',
+        dataAtualizacao: '',
+        autor: 'Maria Clara Matos Recalcatti',
+        revisadoPor: 'Equipe Vozes do Direito',
+        tags: ['Mito ou Verdade', 'Direito Empresarial', 'Direito de Família'],
+        fontes: [
+            {
+                titulo: 'Código Civil — arts. 49-A, 50 e 1.723 a 1.727',
+                link: 'https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm'
+            },
+            {
+                titulo: 'Constituição Federal — art. 226',
+                link: 'https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm'
+            },
+            {
+                titulo: 'STF — Tema 809 da repercussão geral',
+                link: 'https://portal.stf.jus.br/jurisprudenciaRepercussao/tema.asp?num=809'
+            },
+            {
+                titulo: 'Defensoria Pública de Mato Grosso — diferenças entre casamento e união estável',
+                link: 'https://www.defensoria.mt.def.br/dpmt/noticias/casamento-ou-uniao-estavel-defensora-explica-a-diferenca-entre-as-duas-formas-de-constituicao-familiar'
+            }
+        ],
+        imagem: '',
+        textoAlternativo: '',
+        status: 'publicado'
+    },
+    {
+        slug: 'foto-na-rua-pode-ser-publicada-sem-permissao',
+        quadro: 'pergunta-da-semana',
+        titulo: 'Se alguém tirar uma foto minha na rua, pode publicar sem a minha permissão?',
+        resumo: 'Estar em um local público não elimina o direito à imagem: finalidade, destaque, contexto e possíveis danos influenciam a análise.',
+        conteudo: [
+            { tipo: 'paragrafo', texto: 'A resposta não é simplesmente “sim” ou “não”. Estar em uma rua, praça, show ou manifestação não elimina automaticamente o direito à imagem. Ao mesmo tempo, nem toda fotografia feita em local público depende de autorização individual de todas as pessoas que aparecem no enquadramento.' },
+            { tipo: 'titulo', texto: 'O que a legislação protege?' },
+            { tipo: 'paragrafo', texto: 'A Constituição Federal protege a intimidade, a vida privada, a honra e a imagem das pessoas e assegura indenização quando esses direitos são violados. O Código Civil também permite impedir a exposição ou utilização da imagem e buscar reparação nas situações previstas em lei.' },
+            { tipo: 'paragrafo', texto: 'Publicar a própria fotografia em uma rede social não concede uma autorização geral para que qualquer pessoa a copie e reutilize. A possibilidade de republicação depende do contexto, da finalidade, da autorização concedida e dos limites aplicáveis ao caso.' },
+            { tipo: 'titulo', texto: 'Quando a publicação pode violar direitos?' },
+            { tipo: 'lista', itens: ['quando a pessoa é o foco principal da fotografia e sua imagem é divulgada sem consentimento em contexto privado, vexatório ou depreciativo;', 'quando a fotografia é utilizada em anúncio, campanha, perfil comercial ou outra finalidade econômica sem autorização;', 'quando são feitas montagens, memes ofensivos ou associações falsas capazes de atingir a honra e a reputação;', 'quando a publicação expõe momentos de vulnerabilidade, dados pessoais, rotina ou informações íntimas;', 'quando a imagem é usada para criar perfil falso, praticar fraude ou se passar pela pessoa retratada.'] },
+            { tipo: 'titulo', texto: 'Uso comercial sem autorização' },
+            { tipo: 'paragrafo', texto: 'O uso econômico ou publicitário é uma das hipóteses mais claras de proteção. A Súmula 403 do Superior Tribunal de Justiça estabelece que a indenização pela publicação não autorizada da imagem de uma pessoa com fins econômicos ou comerciais independe da prova do prejuízo.' },
+            { tipo: 'paragrafo', texto: 'Assim, uma empresa, marca ou influenciador não deve usar a fotografia de alguém para promover produtos, serviços ou a própria atividade comercial sem a autorização necessária.' },
+            { tipo: 'titulo', texto: 'E as fotografias feitas em locais públicos?' },
+            { tipo: 'paragrafo', texto: 'O fato de a fotografia ter sido feita na rua não autoriza qualquer uso. Contudo, o contexto pode afastar a necessidade de consentimento, especialmente quando a pessoa aparece apenas como elemento acessório de uma imagem ampla de evento ou espaço público, sem exploração comercial individual e sem exposição ofensiva.' },
+            { tipo: 'paragrafo', texto: 'Também podem existir situações de interesse jornalístico, histórico ou público. Nesses casos, é necessário equilibrar liberdade de informação e direitos da personalidade. A finalidade informativa não permite sensacionalismo, descontextualização ou exposição desnecessária da intimidade.' },
+            { tipo: 'titulo', texto: 'Pessoas públicas também possuem direito à imagem' },
+            { tipo: 'paragrafo', texto: 'Políticos, artistas e outras pessoas conhecidas podem estar sujeitas a maior exposição em fatos relacionados à atividade pública ou de interesse coletivo. Isso não significa que perderam o direito à imagem, à honra e à vida privada. O uso exclusivamente econômico e publicitário sem autorização continua podendo gerar responsabilidade.' },
+            { tipo: 'titulo', texto: 'Proteção de crianças e adolescentes' },
+            { tipo: 'paragrafo', texto: 'Crianças e adolescentes recebem proteção especial. O Estatuto da Criança e do Adolescente determina que o direito ao respeito abrange a preservação da imagem, da identidade e da integridade moral. Pais, responsáveis, instituições, empresas e usuários das redes devem considerar o melhor interesse da criança antes de publicar ou compartilhar imagens.' },
+            { tipo: 'titulo', texto: 'O que fazer diante de uma publicação indevida?' },
+            { tipo: 'lista', itens: ['Registre a publicação com capturas de tela que mostrem perfil, data, endereço eletrônico e contexto.', 'Solicite ao responsável a remoção da imagem e guarde a conversa ou o protocolo.', 'Utilize o canal de denúncia da plataforma quando a publicação violar suas regras.', 'Se houver dano, exposição grave, fraude ou uso comercial, procure orientação jurídica para avaliar as medidas cabíveis.'] },
+            { tipo: 'titulo', texto: 'Resposta curta' },
+            { tipo: 'paragrafo', texto: 'Uma pessoa pode fotografar e publicar determinadas cenas ocorridas em locais públicos, especialmente quando há interesse informativo ou quando alguém aparece apenas de forma acessória. Porém, estar na rua não significa renunciar ao direito à imagem. Destaque individual, finalidade comercial, contexto ofensivo, exposição da intimidade e prejuízo à pessoa retratada podem tornar a publicação ilícita.' },
+            { tipo: 'paragrafo', texto: 'Este conteúdo tem finalidade educativa. A existência de violação e o cabimento de indenização dependem da finalidade, do contexto e das provas de cada situação.' }
+        ],
+        dataPublicacao: '2026-09-24',
+        dataAtualizacao: '',
+        autor: 'Júlia Gabriele Schiremberck Oliveira',
+        revisadoPor: 'Equipe Vozes do Direito',
+        tags: ['Direito à imagem', 'Privacidade', 'Redes sociais'],
+        fontes: [
+            {
+                titulo: 'Constituição Federal — art. 5º, incisos V, IX, X e XIV',
+                link: 'https://www.planalto.gov.br/ccivil_03/constituicao/constituicao.htm'
+            },
+            {
+                titulo: 'Código Civil — arts. 11, 12, 20, 21, 186 e 927',
+                link: 'https://www.planalto.gov.br/ccivil_03/leis/2002/l10406compilada.htm'
+            },
+            {
+                titulo: 'STJ — Súmula 403',
+                link: 'https://scon.stj.jus.br/SCON/sumstj/doc.jsp?b=SUMU&i=1&l=10&livre=%22403%22+INPATH%28NUM%29&operador=AND&ordenacao=-%40NUM&p=false'
+            },
+            {
+                titulo: 'Estatuto da Criança e do Adolescente — arts. 17 e 18',
+                link: 'https://www.planalto.gov.br/ccivil_03/leis/l8069.htm'
+            }
+        ],
+        imagem: '',
+        textoAlternativo: '',
+        status: 'publicado'
+    },
+    {
         slug: 'empregador-pode-exigir-respostas-no-whatsapp-durante-o-descanso',
         quadro: 'normal-nao-e-legal',
         titulo: 'O empregador pode exigir respostas no WhatsApp durante o período de descanso?',
